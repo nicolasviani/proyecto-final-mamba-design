@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header-container {
+  background-color: white;
+  border-bottom: 3px solid black;
+  width: 100%;
+  height: 95px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px; }
+
+.logo-container {
+  width: 280px;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+  .logo-container img {
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 85px; }
+
+.nav-bottom-container {
+  width: 400px;
+  height: 85px; }
+
+.navbar-bottom-container ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 85px; }
+  .navbar-bottom-container ul li {
+    list-style: none; }
+    .navbar-bottom-container ul li a {
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      font-size: 20px;
+      font-weight: 200; }
+      .navbar-bottom-container ul li a:hover {
+        background-color: black;
+        color: white;
+        border-radius: 3px;
+        text-decoration: underline white 2px;
+        padding: 5px; }
+
+.nav-auxiliary-container {
+  width: 600px;
+  height: 85px;
+  display: flex;
+  flex-direction: row; }
+
+.navbar-top-container ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 85px; }
+  .navbar-top-container ul li {
+    list-style: none; }
+    .navbar-top-container ul li a {
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      font-size: 20px;
+      font-weight: 200; }
+      .navbar-top-container ul li a:hover {
+        background-color: black;
+        color: white;
+        border-radius: 3px;
+        text-decoration: underline white 2px;
+        padding: 5px; }
+
+.auxiliary-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center; }
+
+.input-container {
+  width: 193px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3px; }
+
+.icon-container img {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 24px; }
+
+.parrafo-container {
+  background-color: blue;
+  color: white;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  padding-top: 20px; }
+
+.photo-container img {
+  width: 100%;
+  height: 400px; }
