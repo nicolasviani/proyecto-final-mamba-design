@@ -79,4 +79,8 @@ i{
     font-size: 22px;
     font-weight: 200;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    &:hover{
+        transform: scale(1.1,1.1);
+        transition: transform 100ms 0.2s;
+    }
 }
