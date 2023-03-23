@@ -1,7 +1,26 @@
-@mixin flex($display, $justify-content, $align-content, $align-items, $flex-direction){
+@mixin flex($display, $flex-wrap, $flex-direction, $justify-content, $align-items, $align-content){
     display: $display;
-    justify-content: $justify-content;
-    align-content: $align-content;
-    align-items: $align-items;
+    flex-wrap: $flex-wrap;
     flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: $align-content;
+}
+@mixin font($width, $heigth, $font-size, $font-weight, $border, $border-radius, $margin, $margin-top, $margin-bottom, $margin-left, $margin-right, $padding, $padding-top, $padding-bottom, $padding-left, $padding-right){
+    width: $width;
+    height: $heigth;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    border: $border;
+    border-radius: $border-radius;
+    margin: $margin;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+    padding: $padding;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
 }

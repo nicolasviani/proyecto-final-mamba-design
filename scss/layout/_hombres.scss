@@ -3,13 +3,11 @@ h1{
     text-align: center;
     padding: 5px;
 }
-.carrousel-conatiner{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.carrousel-container{
+    @include flex(flex, wrap, row, none, none, none);
 }
 #contentitemcarrousel{
-    width: 1263px;
+    width: 320px;
     height: 400px;
     overflow: hidden; 
 }
@@ -25,79 +23,42 @@ h1{
     width: 100%;
     position: absolute;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(flex, none, none, space-between, center, none);
     padding: 20px;
 }
 #card-carrousel-1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(flex, wrap, row, space-evenly, center, none);
 }
 #card-carrousel-2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend #card-carrousel-1;
 }
+
 #card-carrousel-3{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend #card-carrousel-1;
 }
 #card-carrousel-4{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend #card-carrousel-1;
 }
 #card-carrousel-5{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend #card-carrousel-1;
 }
 #card-carrousel-6{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend #card-carrousel-1;
 }
 #card-carrousel-7{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend #card-carrousel-1;
 }
 #card-carrousel-8{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend #card-carrousel-1;
 }
 #card-carrousel-9{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend #card-carrousel-1;
 }
 a{
     text-decoration: none;
 }
 i{
-    color: black;
+    color: $color-black;
     img{
         width: 15px;
         height: 15px;
@@ -107,7 +68,7 @@ i{
     width: 210px;
     height: 377px;
     padding: 3px 3px;
-    border: 1px solid black;
+    border: 1px solid $color-black;
 }
 .card-container img{
     width: 200px;

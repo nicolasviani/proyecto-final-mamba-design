@@ -1,22 +1,17 @@
 .header-container {
-  background-color: white;
-  border-bottom: 3px solid black;
+  background-color: $color-white;
+  border-bottom: 3px solid $color-black;
   width: 100%;
   height: 95px;
-  display: flex;
-  flex-direction: row;
+  @include flex(flex, none, row, none, none, none);
   padding: 5px;
 }
 .logo-container {
   width: 280px;
   height: 85px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  @include flex(flex, wrap, row, center, center, none);
   img {
-    border: 5px solid black;
+    border: 5px solid $color-black;
     border-radius: 50%;
     width: 100px;
     height: 85px;
@@ -28,26 +23,19 @@
 }
 .navbar-bottom-container {
   ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    @include flex(flex, wrap, row, flex-start, center, none);
     height: 85px;
     li {
       list-style: none;
         a {
           text-decoration: none;
-          color: black;
+          color: $color-black;
           padding: 5px;
           font-size: 20px;
           font-weight: 200;
           &:hover {
-          background-color: black;
-          color: white;
-          border-radius: 3px;
-          text-decoration: underline white 2px;
-          padding: 5px;
+          text-decoration: underline $color-black 3px;
+          padding-top: 5px;
         }
       }
     }
@@ -56,69 +44,50 @@
 .nav-auxiliary-container{
   width: 600px;
   height: 85px;
-  display: flex;
-  flex-direction: row;
+  @include flex(flex, wrap, row, none, none, none);
 }
 .navbar-top-container {
   ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-start;
+    @include flex(flex, wrap, row, flex-end, flex-start, none);
     height: 85px;
     li {
       list-style: none;
         a {
           text-decoration: none;
-          color: black;
-          padding: 5px;
-          font-size: 15px;
-          font-weight: 200;
+          color: $color-black;
+          padding: 10px;
+          font-size: 12px;
+          font-weight: 100;
           &:hover {
-          background-color: black;
-          color: white;
-          border-radius: 3px;
-          text-decoration: underline white 2px;
-          padding: 5px;
+          text-decoration: underline $color-black 3px;
+          padding-top: 5px;
         }
       }
     }
   }
 }
 .auxiliary-menu{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-end;
-  align-items: center;
+  @include flex(flex, wrap, row, flex-end, center, center);
 }
 .input-container{
   width: 193px;
   height: 32px;
-  border: 3px solid black;
+  border: 3px solid $color-black;
   border-radius: 3PX;
-  background-color: lightgray;
-  font-weight: 400 solid black;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  background-color: $color-lightgray;
+  font-weight: 400 solid $color-black;
+  @include flex(flex, wrap, row, none, none, none);
   padding: 3px;
 }
 .icon-container img{
   width: 24px;
 }
 .parrafo-container{
-  background-color: blue;
-  color: white;
-  font-size: 25px;
-  font-weight: 200;
+  background-color: $color-blue;
+  color: $color-white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  width: 100%;
-  height: 80px;
-  padding-top: 20px;
+  @include font(100%, 80px, 25px, 200, none, none, none, none, none, none, none, none, 20px, none, none, none);
 }
 .photo-container{
   width: 100%;
@@ -132,7 +101,7 @@
   p{
     font-size: 45px;
     font-weight: 400;
-    color: white;
+    color: $color-white;
     position: absolute;
     top: 70%;
     right: 5%;
@@ -140,11 +109,7 @@
   }
 }
 .title-container{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, wrap, row, center, center, none);
   a{
     font-size: 25px;
     font-weight: 400;
@@ -152,11 +117,11 @@
     margin: 15px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: $color-black;
   }
   a:hover{
-    background-color: black;
-    color: whitesmoke;
+    background-color: $color-black;
+    color: $color-whitesmoke;
     border-radius: 5px;
     padding: 3px 3px;
   }
@@ -164,17 +129,13 @@
 .cards-container{
   width: 1263px;
   height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  @include flex(flex, wrap, row, space-around, center, none);
 }
 .card-container{
   width: 210px;
   height: 377px;
   padding: 3px 3px;
-  border: 1px solid black;
+  border: 1px solid $color-black;
   img{
     width: 200px;
     height: 300px;
@@ -187,20 +148,16 @@
   }
   a{
     text-decoration: none;
-    color: black;
+    color: $color-black;
   }
 }
 .footer-container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  @include flex(flex, wrap, row, space-evenly, none, none);
   margin: 5px 5px;
+  background-color: $color-darkgray;
 } 
 .nosotros-container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  @include flex(flex, wrap, column, none, none, none);
   h2{
     padding: 5px;
     h3{
@@ -209,31 +166,24 @@
   }
 }
 .redes-container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  @include flex(flex, wrap, column, none, none, none);
   h2{
     padding: 5px;
   }
   a{
-    color: black;
+    color: $color-black;
     text-decoration: none;
     padding: 5px;
   }
 }
 .pago-container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  @include flex(flex, wrap, column, none, none, none);
   h2{
     padding: 5px;
   }
   a{
-    color: black;
+    color: $color-black;
     text-decoration: none;
     padding: 5px;
   }
 }
-
-
-

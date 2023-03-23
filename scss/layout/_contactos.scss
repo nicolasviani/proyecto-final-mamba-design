@@ -1,0 +1,51 @@
+
+.contactos-container{
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-lightwhite;
+    background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    @include flex(flex, wrap, row, center, center, none);
+    min-height: 100vh;
+}
+.form-contactos{
+    background-color: $color-white;
+    max-width: 740px;
+    max-height: 790px;
+    text-align: center;
+    @include font(90%, 90%, none, none, none, 10px, 15px, none, none, none, none, 4.5em 3em, none, none, none, none);
+    @include flex(flex, wrap, column, flex-start, flex-start, none);
+
+}
+.title-contactos-container{
+    @include flex(flex, wrap, row, center, center, none);
+    h1{
+        font-family:'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+.paragraph-contactos-container{
+    @include flex(flex, wrap, row, center, center, none);
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+.form-contactos-group{
+    padding: 5px;
+
+}
+.input-contactos{
+    width: 600px;
+    height: 40px;
+    padding-left: 3px;
+    border: 3px solid $color-lightblue;
+    cursor: pointer;
+}
+.form-contactos-submit{
+    background-color: $color-lightblue;
+    font-family: 'Roboto', sans-serif;
+    @include font(none, none, 12px, 300, 2px solid $color-black, 3px, none, none, none, 5px, none, 3px 3px, none, none, none, none);
+}

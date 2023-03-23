@@ -1,0 +1,1525 @@
+// media queryes index/html
+@media (max-width:768px){
+.header-container {
+  background-color: $color-white;
+  border-bottom: 3px solid $color-black;
+  width: 100%;
+  height: auto;
+  @include flex(flex, none, row, none, none, none);
+  padding: 4px;
+}
+.logo-container {
+  width: 160px;
+  height: auto;
+  @include flex(flex, wrap, row, center, center, none);
+  img {
+    border: 4px solid $color-black;
+    border-radius: 50%;
+    width: 70px;
+    height: 55px;
+  }
+}
+.nav-bottom-container{
+  width: 330px;
+  height: auto;
+}
+.navbar-bottom-container {
+  ul {
+    @include flex(flex, wrap, row, flex-start, center, none);
+    height: 55px;
+    li {
+      list-style: none;
+        a {
+          text-decoration: none;
+          color: $color-black;
+          padding: 5px;
+          font-size: 17px;
+          font-weight: 200;
+          &:hover {
+          text-decoration: underline $color-black 3px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
+.nav-auxiliary-container{
+  width: 420px;
+  height: auto;
+  @include flex(flex, wrap, row, none, none, none);
+}
+.navbar-top-container {
+  ul {
+    @include flex(flex, wrap, row, flex-end, flex-start, none);
+    height: 55px;
+    li {
+      list-style: none;
+        a {
+          text-decoration: none;
+          color: $color-black;
+          padding: 7px;
+          font-size: 10px;
+          font-weight: 100;
+          &:hover {
+          text-decoration: underline $color-black 3px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
+.auxiliary-menu{
+  @include flex(flex, wrap, row, flex-end, flex-end, flex-end);
+}
+.input-container{
+  width: 130px;
+  height: auto;
+  border: 3px solid $color-black;
+  border-radius: 3PX;
+  background-color: $color-lightgray;
+  font-weight: 400 solid $color-black;
+  @include flex(flex, wrap, row, flex-end, center, none);
+  padding: 3px;
+}
+.icon-container img{
+  width: 20px;
+}
+.parrafo-container{
+  background-color: $color-blue;
+  color: $color-white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  @include font(100%, 80px, 22px, 200, none, none, none, none, none, none, none, none, none, none, none, none);
+}
+.photo-container{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  p{
+    font-size: 40px;
+    font-weight: 300;
+    color: $color-white;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    transform: translate(-50% -50%);
+  }
+}
+.title-container{
+  @include flex(flex, wrap, row, center, center, none);
+  a{
+    font-size: 19px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: $color-black;
+  }
+  a:hover{
+    background-color: $color-black;
+    color: $color-whitesmoke;
+    border-radius: 5px;
+    padding: 3px 3px;
+  }
+}
+.cards-container{
+  width: auto;
+  height: auto;
+  @include flex(flex, wrap, row, space-around, center, none);
+}
+.card-container{
+  width: 170px;
+  height: 347px;
+  padding: 3px 3px;
+  border: 1px solid $color-black;
+  img{
+    width: 160px;
+    height: 280px;
+    border-radius: 3px;  
+  }
+  p{
+    font-size: 16px;
+    font-weight: 200;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  a{
+    text-decoration: none;
+    color: $color-black;
+    font-size: 12px;
+  }
+}
+.footer-container{
+  @include flex(flex, wrap, row, center, none, none);
+  margin: 5px 5px;
+  background-color: $color-darkgray;
+} 
+.nosotros-container{
+  @include flex(flex, wrap, column, none, none, none);
+  h2{
+    padding: 5px;
+    h3{
+      text-align: center;
+    }
+  }
+}
+.redes-container{
+  @include flex(flex, wrap, column, none, none, none);
+  h2{
+    padding: 5px;
+  }
+  a{
+    color: $color-black;
+    text-decoration: none;
+    padding: 5px;
+  }
+}
+.pago-container{
+  @include flex(flex, wrap, column, none, none, none);
+  h2{
+    padding: 5px;
+  }
+  a{
+    color: $color-black;
+    text-decoration: none;
+    padding: 5px;
+  }
+}
+}
+@media (max-width:425px){
+  .header-container {
+    background-color: $color-white;
+    border-bottom: 3px solid $color-black;
+    width: 100%;
+    height: auto;
+    @include flex(flex, none, row, none, none, none);
+    padding: 4px;
+  }
+  .logo-container {
+    width: 160px;
+    height: auto;
+    @include flex(flex, wrap, row, center, center, none);
+    img {
+      border: 4px solid $color-black;
+      border-radius: 50%;
+      width: 70px;
+      height: 55px;
+    }
+  }
+  .nav-bottom-container{
+    width: 330px;
+    height: auto;
+  }
+  .navbar-bottom-container {
+    ul {
+      @include flex(flex, wrap, row, flex-start, center, none);
+      height: 55px;
+      li {
+        list-style: none;
+          a {
+            text-decoration: none;
+            color: $color-black;
+            padding: 5px;
+            font-size: 17px;
+            font-weight: 200;
+            &:hover {
+            text-decoration: underline $color-black 3px;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .nav-auxiliary-container{
+    width: 420px;
+    height: auto;
+    @include flex(flex, wrap, row, none, none, none);
+  }
+  .navbar-top-container {
+    ul {
+      @include flex(flex, wrap, row, flex-end, flex-start, none);
+      height: 55px;
+      li {
+        list-style: none;
+          a {
+            text-decoration: none;
+            color: $color-black;
+            padding: 7px;
+            font-size: 10px;
+            font-weight: 100;
+            &:hover {
+            text-decoration: underline $color-black 3px;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .auxiliary-menu{
+    @include flex(flex, wrap, row, flex-end, flex-end, flex-end);
+  }
+  .input-container{
+    width: 130px;
+    height: auto;
+    border: 3px solid $color-black;
+    border-radius: 3PX;
+    background-color: $color-lightgray;
+    font-weight: 400 solid $color-black;
+    @include flex(flex, wrap, row, flex-end, center, none);
+    padding: 3px;
+  }
+  .icon-container img{
+    width: 20px;
+  }
+  .parrafo-container{
+    background-color: $color-blue;
+    color: $color-white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    @include font(100%, 80px, 22px, 200, none, none, none, none, none, none, none, none, none, none, none, none);
+  }
+  .photo-container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    p{
+      font-size: 40px;
+      font-weight: 300;
+      color: $color-white;
+      position: absolute;
+      top: 70%;
+      right: 5%;
+      transform: translate(-50% -50%);
+    }
+  }
+  .title-container{
+    @include flex(flex, wrap, row, center, center, none);
+    a{
+      font-size: 19px;
+      font-weight: 200;
+      font-family: 'Roboto', sans-serif;
+      margin: 15px;
+      text-align: center;
+      text-decoration: none;
+      color: $color-black;
+    }
+    a:hover{
+      background-color: $color-black;
+      color: $color-whitesmoke;
+      border-radius: 5px;
+      padding: 3px 3px;
+    }
+  }
+  .cards-container{
+    width: auto;
+    height: auto;
+    @include flex(flex, wrap, row, space-around, center, none);
+  }
+  .card-container{
+    width: 170px;
+    height: 347px;
+    padding: 3px 3px;
+    border: 1px solid $color-black;
+    img{
+      width: 160px;
+      height: 280px;
+      border-radius: 3px;  
+    }
+    p{
+      font-size: 16px;
+      font-weight: 200;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    a{
+      text-decoration: none;
+      color: $color-black;
+      font-size: 12px;
+    }
+  }
+  .footer-container{
+    @include flex(flex, wrap, row, center, none, none);
+    margin: 5px 5px;
+    background-color: $color-darkgray;
+  } 
+  .nosotros-container{
+    @include flex(flex, wrap, column, none, none, none);
+    h2{
+      padding: 5px;
+      h3{
+        text-align: center;
+      }
+    }
+  }
+  .redes-container{
+    @include flex(flex, wrap, column, none, none, none);
+    h2{
+      padding: 5px;
+    }
+    a{
+      color: $color-black;
+      text-decoration: none;
+      padding: 5px;
+    }
+  }
+  .pago-container{
+    @include flex(flex, wrap, column, none, none, none);
+    h2{
+      padding: 5px;
+    }
+    a{
+      color: $color-black;
+      text-decoration: none;
+      padding: 5px;
+    }
+  }
+  }
+  @media (max-width:375px){
+    .header-container {
+      background-color: $color-white;
+      border-bottom: 3px solid $color-black;
+      width: 100%;
+      height: auto;
+      @include flex(flex, none, row, none, none, none);
+      padding: 4px;
+    }
+    .logo-container {
+      width: 160px;
+      height: auto;
+      @include flex(flex, wrap, row, center, center, none);
+      img {
+        border: 4px solid $color-black;
+        border-radius: 50%;
+        width: 70px;
+        height: 55px;
+      }
+    }
+    .nav-bottom-container{
+      width: 330px;
+      height: auto;
+    }
+    .navbar-bottom-container {
+      ul {
+        @include flex(flex, wrap, column, none, center, none);
+        height: auto;
+        li {
+          list-style: none;
+            a {
+              text-decoration: none;
+              color: $color-black;
+              padding: 5px;
+              font-size: 17px;
+              font-weight: 200;
+              &:hover {
+              text-decoration: underline $color-black 3px;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+    }
+    .nav-auxiliary-container{
+      width: 420px;
+      height: auto;
+      @include flex(flex, wrap, row, none, none, none);
+    }
+    .navbar-top-container {
+      ul {
+        @include flex(flex, wrap, column, none, center, none);
+        height: 55px;
+        li {
+          list-style: none;
+            a {
+              text-decoration: none;
+              color: $color-black;
+              padding: 7px;
+              font-size: 10px;
+              font-weight: 100;
+              &:hover {
+              text-decoration: underline $color-black 3px;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+    }
+    .auxiliary-menu{
+      @include flex(flex, wrap, row, flex-end, flex-end, flex-end);
+    }
+    .input-container{
+      width: 110px;
+      height: auto;
+      border: 2px solid $color-black;
+      border-radius: 3PX;
+      background-color: $color-lightgray;
+      font-weight: 400 solid $color-black;
+      @include flex(flex, wrap, row, flex-end, center, none);
+      padding: 3px;
+    }
+    .icon-container img{
+      width: 16px;
+      height: 16px;
+    }
+    .parrafo-container{
+      background-color: $color-blue;
+      color: $color-white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+      @include font(100%, 80px, 22px, 200, none, none, none, none, none, none, none, none, none, none, none, none);
+    }
+    .photo-container{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      p{
+        font-size: 20px;
+        font-weight: 300;
+        color: $color-white;
+        position: absolute;
+        top: 70%;
+        right: 5%;
+        transform: translate(-50% -50%);
+      }
+    }
+    .title-container{
+      @include flex(flex, wrap, row, center, center, none);
+      a{
+        font-size: 19px;
+        font-weight: 200;
+        font-family: 'Roboto', sans-serif;
+        margin: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: $color-black;
+      }
+      a:hover{
+        background-color: $color-black;
+        color: $color-whitesmoke;
+        border-radius: 5px;
+        padding: 3px 3px;
+      }
+    }
+    .cards-container{
+      width: auto;
+      height: auto;
+      @include flex(flex, wrap, row, space-around, center, none);
+    }
+    .card-container{
+      width: 170px;
+      height: 347px;
+      padding: 3px 3px;
+      border: 1px solid $color-black;
+      img{
+        width: 160px;
+        height: 280px;
+        border-radius: 3px;  
+      }
+      p{
+        font-size: 16px;
+        font-weight: 200;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      a{
+        text-decoration: none;
+        color: $color-black;
+        font-size: 12px;
+      }
+    }
+    .footer-container{
+      @include flex(flex, wrap, row, center, none, none);
+      margin: 5px 5px;
+      background-color: $color-darkgray;
+    } 
+    .nosotros-container{
+      @include flex(flex, wrap, column, none, none, none);
+      h2{
+        padding: 5px;
+        h3{
+          text-align: center;
+        }
+      }
+    }
+    .redes-container{
+      @include flex(flex, wrap, column, none, none, none);
+      h2{
+        padding: 5px;
+      }
+      a{
+        color: $color-black;
+        text-decoration: none;
+        padding: 5px;
+      }
+    }
+    .pago-container{
+      @include flex(flex, wrap, column, none, none, none);
+      h2{
+        padding: 5px;
+      }
+      a{
+        color: $color-black;
+        text-decoration: none;
+        padding: 5px;
+      }
+    }
+    }
+    @media (max-width:320px){
+      .header-container {
+        background-color: $color-white;
+        border-bottom: 3px solid $color-black;
+        width: 100%;
+        height: auto;
+        @include flex(flex, none, row, none, none, none);
+        padding: 4px;
+      }
+      .logo-container {
+        width: 160px;
+        height: auto;
+        @include flex(flex, wrap, row, center, center, none);
+        img {
+          border: 4px solid $color-black;
+          border-radius: 50%;
+          width: 70px;
+          height: 55px;
+        }
+      }
+      .nav-bottom-container{
+        width: 330px;
+        height: auto;
+      }
+      .navbar-bottom-container {
+        ul {
+          @include flex(flex, wrap, column, none, center, none);
+          height: auto;
+          li {
+            list-style: none;
+              a {
+                text-decoration: none;
+                color: $color-black;
+                padding: 5px;
+                font-size: 17px;
+                font-weight: 200;
+                &:hover {
+                text-decoration: underline $color-black 3px;
+                padding-top: 5px;
+              }
+            }
+          }
+        }
+      }
+      .nav-auxiliary-container{
+        width: 420px;
+        height: auto;
+        @include flex(flex, wrap, row, none, none, none);
+      }
+      .navbar-top-container {
+        ul {
+          @include flex(flex, wrap, column, none, center, none);
+          height: 55px;
+          li {
+            list-style: none;
+              a {
+                text-decoration: none;
+                color: $color-black;
+                padding: 7px;
+                font-size: 10px;
+                font-weight: 100;
+                &:hover {
+                text-decoration: underline $color-black 3px;
+                padding-top: 5px;
+              }
+            }
+          }
+        }
+      }
+      .auxiliary-menu{
+        @include flex(flex, wrap, row, flex-end, flex-end, flex-end);
+      }
+      .input-container{
+        width: 90px;
+        height: auto;
+        border: 2px solid $color-black;
+        border-radius: 3PX;
+        background-color: $color-lightgray;
+        font-weight: 400 solid $color-black;
+        @include flex(flex, wrap, row, flex-end, center, none);
+        padding: 3px;
+      }
+      .icon-container img{
+        width: 16px;
+        height: 16px;
+      }
+      .parrafo-container{
+        background-color: $color-blue;
+        color: $color-white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        @include font(100%, 80px, 22px, 200, none, none, none, none, none, none, none, none, none, none, none, none);
+      }
+      .photo-container{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        img{
+          width: 100%;
+          height: auto;
+        }
+        p{
+          font-size: 15px;
+          font-weight: 300;
+          color: $color-white;
+          position: absolute;
+          top: 70%;
+          right: 5%;
+          transform: translate(-50% -50%);
+        }
+      }
+      .title-container{
+        @include flex(flex, wrap, row, center, center, none);
+        a{
+          font-size: 19px;
+          font-weight: 200;
+          font-family: 'Roboto', sans-serif;
+          margin: 15px;
+          text-align: center;
+          text-decoration: none;
+          color: $color-black;
+        }
+        a:hover{
+          background-color: $color-black;
+          color: $color-whitesmoke;
+          border-radius: 5px;
+          padding: 3px 3px;
+        }
+      }
+      .cards-container{
+        width: auto;
+        height: auto;
+        @include flex(flex, wrap, row, space-around, center, none);
+      }
+      .card-container{
+        width: 170px;
+        height: 347px;
+        padding: 3px 3px;
+        border: 1px solid $color-black;
+        img{
+          width: 160px;
+          height: 280px;
+          border-radius: 3px;  
+        }
+        p{
+          font-size: 16px;
+          font-weight: 200;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        a{
+          text-decoration: none;
+          color: $color-black;
+          font-size: 12px;
+        }
+      }
+      .footer-container{
+        @include flex(flex, wrap, row, center, none, none);
+        margin: 5px 5px;
+        background-color: $color-darkgray;
+      } 
+      .nosotros-container{
+        @include flex(flex, wrap, column, none, none, none);
+        h2{
+          padding: 5px;
+          h3{
+            text-align: center;
+          }
+        }
+      }
+      .redes-container{
+        @include flex(flex, wrap, column, none, none, none);
+        h2{
+          padding: 5px;
+        }
+        a{
+          color: $color-black;
+          text-decoration: none;
+          padding: 5px;
+        }
+      }
+      .pago-container{
+        @include flex(flex, wrap, column, none, none, none);
+        h2{
+          padding: 5px;
+        }
+        a{
+          color: $color-black;
+          text-decoration: none;
+          padding: 5px;
+        }
+      }
+      }
+      // media querys login/html
+      @media (max-width: 768px){
+        .main-container{
+          font-family: 'Roboto', sans-serif;
+          background-color: $color-lightwhite;
+          background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+          background-size: 20px 20px;
+          background-position: 0 0,10px 10px;
+          @include flex(flex, wrap, row, center, center, none);
+          min-height: 100vh;
+      }
+      .form{  
+          background-color: $color-white;
+          margin: auto;
+          width: 90%;
+          max-width: 400px;
+          padding: 4.5em 3em;
+          border-radius: 10px;
+          text-align: center;
+      }
+      .form-title{
+          font-size: 27px;
+          margin-bottom: .5em;
+      }
+      .form-subtitle{
+          font-weight: 300;
+      }
+      .form-link{
+          font-weight: 400;
+          color: $color-black;
+      }
+      .form-container{
+          margin-top: 3em;
+          display: grid;
+          gap: 2.5em; 
+      }
+      .form-group{
+          position: relative;
+          color: #5757577e;
+      }
+      .form_input{
+          width: 100%;
+          background: none;
+          color: $color-gray;
+          font-size: 1rem;
+          padding: .6em .3em;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid;
+      }
+      .form-input:not(:placeholder-shown) + .form-label{
+          color: $color-marron; 
+      }
+      .form-input:focus + .form-label,
+      .form-input:not(:placeholder-shown) + .form-label{
+          transform: translateY(-12px) scale(.7); 
+          transform-origin: left top;
+          color: $color-lightblue;
+      }
+      .form-label{
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 5px;
+          transform: translateY(10px);
+          transition: transform .5s, color .3s;
+      }
+      .form_submit{
+          background-color: $color-lightblue;
+          color: $color-white;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 1rem;
+          padding: .8em 0;
+          border: none;
+          border-radius: .5em;
+      }
+      .form-line{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $color-lightblue;
+          transform: scale(0);
+          transform: left bottom;
+          transition: transform .4s;
+      }
+      .form-input:focus ~ .form-line,
+      .form-input:not(:placeholder-shown) ~ .form-line{
+          transform: scale(1);
+      }
+      }
+      @media (max-width: 425px){
+        .main-container{
+          font-family: 'Roboto', sans-serif;
+          background-color: $color-lightwhite;
+          background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+          background-size: 20px 20px;
+          background-position: 0 0,10px 10px;
+          @include flex(flex, wrap, row, center, center, none);
+          min-height: 100vh;
+      }
+      .form{  
+          background-color: $color-white;
+          margin: auto;
+          width: 90%;
+          max-width: 400px;
+          padding: 4.5em 3em;
+          border-radius: 10px;
+          text-align: center;
+      }
+      .form-title{
+          font-size: 27px;
+          margin-bottom: .5em;
+      }
+      .form-subtitle{
+          font-weight: 300;
+      }
+      .form-link{
+          font-weight: 400;
+          color: $color-black;
+      }
+      .form-container{
+          margin-top: 3em;
+          display: grid;
+          gap: 2.5em; 
+      }
+      .form-group{
+          position: relative;
+          color: #5757577e;
+      }
+      .form_input{
+          width: 100%;
+          background: none;
+          color: $color-gray;
+          font-size: 1rem;
+          padding: .6em .3em;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid;
+      }
+      .form-input:not(:placeholder-shown) + .form-label{
+          color: $color-marron; 
+      }
+      .form-input:focus + .form-label,
+      .form-input:not(:placeholder-shown) + .form-label{
+          transform: translateY(-12px) scale(.7); 
+          transform-origin: left top;
+          color: $color-lightblue;
+      }
+      .form-label{
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 5px;
+          transform: translateY(10px);
+          transition: transform .5s, color .3s;
+      }
+      .form_submit{
+          background-color: $color-lightblue;
+          color: $color-white;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 1rem;
+          padding: .8em 0;
+          border: none;
+          border-radius: .5em;
+      }
+      .form-line{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $color-lightblue;
+          transform: scale(0);
+          transform: left bottom;
+          transition: transform .4s;
+      }
+      .form-input:focus ~ .form-line,
+      .form-input:not(:placeholder-shown) ~ .form-line{
+          transform: scale(1);
+        }
+      }
+      @media (max-width: 375px){
+        .main-container{
+          font-family: 'Roboto', sans-serif;
+          background-color: $color-lightwhite;
+          background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+          background-size: 20px 20px;
+          background-position: 0 0,10px 10px;
+          @include flex(flex, wrap, row, center, center, none);
+          min-height: 100vh;
+      }
+      .form{  
+          background-color: $color-white;
+          margin: auto;
+          width: 90%;
+          max-width: 400px;
+          padding: 4.5em 3em;
+          border-radius: 10px;
+          text-align: center;
+      }
+      .form-title{
+          font-size: 27px;
+          margin-bottom: .5em;
+      }
+      .form-subtitle{
+          font-weight: 300;
+      }
+      .form-link{
+          font-weight: 400;
+          color: $color-black;
+      }
+      .form-container{
+          margin-top: 3em;
+          display: grid;
+          gap: 2.5em; 
+      }
+      .form-group{
+          position: relative;
+          color: #5757577e;
+      }
+      .form_input{
+          width: 100%;
+          background: none;
+          color: $color-gray;
+          font-size: 1rem;
+          padding: .6em .3em;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid;
+      }
+      .form-input:not(:placeholder-shown) + .form-label{
+          color: $color-marron; 
+      }
+      .form-input:focus + .form-label,
+      .form-input:not(:placeholder-shown) + .form-label{
+          transform: translateY(-12px) scale(.7); 
+          transform-origin: left top;
+          color: $color-lightblue;
+      }
+      .form-label{
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 5px;
+          transform: translateY(10px);
+          transition: transform .5s, color .3s;
+      }
+      .form_submit{
+          background-color: $color-lightblue;
+          color: $color-white;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 1rem;
+          padding: .8em 0;
+          border: none;
+          border-radius: .5em;
+      }
+      .form-line{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $color-lightblue;
+          transform: scale(0);
+          transform: left bottom;
+          transition: transform .4s;
+      }
+      .form-input:focus ~ .form-line,
+      .form-input:not(:placeholder-shown) ~ .form-line{
+          transform: scale(1);
+      }
+      }
+      @media (max-width: 320px){
+        .main-container{
+          font-family: 'Roboto', sans-serif;
+          background-color: $color-lightwhite;
+          background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+          background-size: 20px 20px;
+          background-position: 0 0,10px 10px;
+          @include flex(flex, wrap, row, center, center, none);
+          min-height: 100vh;
+      }
+      .form{  
+          background-color: $color-white;
+          margin: auto;
+          width: 90%;
+          max-width: 400px;
+          padding: 4.5em 3em;
+          border-radius: 10px;
+          text-align: center;
+      }
+      .form-title{
+          font-size: 27px;
+          margin-bottom: .5em;
+      }
+      .form-subtitle{
+          font-weight: 300;
+      }
+      .form-link{
+          font-weight: 400;
+          color: $color-black;
+      }
+      .form-container{
+          margin-top: 3em;
+          display: grid;
+          gap: 2.5em; 
+      }
+      .form-group{
+          position: relative;
+          color: #5757577e;
+      }
+      .form_input{
+          width: 100%;
+          background: none;
+          color: $color-gray;
+          font-size: 1rem;
+          padding: .6em .3em;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid;
+      }
+      .form-input:not(:placeholder-shown) + .form-label{
+          color: $color-marron; 
+      }
+      .form-input:focus + .form-label,
+      .form-input:not(:placeholder-shown) + .form-label{
+          transform: translateY(-12px) scale(.7); 
+          transform-origin: left top;
+          color: $color-lightblue;
+      }
+      .form-label{
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 5px;
+          transform: translateY(10px);
+          transition: transform .5s, color .3s;
+      }
+      .form_submit{
+          background-color: $color-lightblue;
+          color: $color-white;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 1rem;
+          padding: .8em 0;
+          border: none;
+          border-radius: .5em;
+      }
+      .form-line{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $color-lightblue;
+          transform: scale(0);
+          transform: left bottom;
+          transition: transform .4s;
+      }
+      .form-input:focus ~ .form-line,
+      .form-input:not(:placeholder-shown) ~ .form-line{
+          transform: scale(1);
+      }
+      }
+      // media querys hombres/html
+    @media (max-width: 768px){
+    h1{
+        font-family:'Roboto', sans-serif;
+        text-align: center;
+        padding: 5px;
+    }
+    .carrousel-container{
+        @include flex(flex, wrap, row, none, none, none);
+    }
+    #contentitemcarrousel{
+        width: auto;
+        height: 400px;
+        overflow: hidden; 
+    }
+    .item-carrousel{
+        height: 100%;
+        position: relative;
+    }
+    .card-carrousel{
+        height: 100%;
+    }
+    .flechas-carrousel{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        @include flex(flex, none, none, space-between, center, none);
+        padding: 20px;
+    }
+    #card-carrousel-1{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-2{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    
+    #card-carrousel-3{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-4{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-5{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-6{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-7{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-8{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-9{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    a{
+        text-decoration: none;
+    }
+    i{
+        color: $color-black;
+        img{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .card-container{
+        width: 210px;
+        height: 377px;
+        padding: 3px 3px;
+        border: 1px solid $color-black;
+    }
+    .card-container img{
+        width: 200px;
+        height: 300px;
+        border-radius: 3px;  
+    }
+    .card-container p{
+        font-size: 22px;
+        font-weight: 200;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  }
+  @media (max-width: 425px){
+    h1{
+        font-family:'Roboto', sans-serif;
+        text-align: center;
+        padding: 5px;
+    }
+    .carrousel-container{
+        @include flex(flex, wrap, column, none, none, none);
+    }
+    #contentitemcarrousel{
+        width: auto;
+        height: 400px;
+        overflow: hidden; 
+    }
+    .item-carrousel{
+        height: 100%;
+        position: relative;
+    }
+    .card-carrousel{
+        height: 100%;
+    }
+    .flechas-carrousel{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        @include flex(flex, none, none, space-between, center, none);
+        padding: 20px;
+    }
+    #card-carrousel-1{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-2{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    
+    #card-carrousel-3{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-4{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-5{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-6{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-7{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-8{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    #card-carrousel-9{
+        @include flex(flex, wrap, row, space-evenly, center, none);
+    }
+    a{
+        text-decoration: none;
+    }
+    i{
+        color: $color-black;
+        img{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .card-container{
+        width: 210px;
+        height: 377px;
+        padding: 3px 3px;
+        border: 1px solid $color-black;
+    }
+    .card-container img{
+        width: 200px;
+        height: 300px;
+        border-radius: 3px;  
+    }
+    .card-container p{
+        font-size: 22px;
+        font-weight: 200;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  }
+
+
+
+
+  // media querys contactos/html
+  @media (max-width: 768px){
+    .contactos-container{
+      font-family: 'Roboto', sans-serif;
+      background-color: $color-lightwhite;
+      background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+      background-size: 20px 20px;
+      background-position: 0 0,10px 10px;
+      @include flex(flex, wrap, row, center, center, none);
+      min-height: 100vh;
+  }
+  .form-contactos{
+      background-color: $color-white;
+      max-width: 740px;
+      max-height: 790px;
+      text-align: center;
+      @include font(90%, 90%, none, none, none, 10px, 15px, none, none, none, none, 4.5em 3em, none, none, none, none);
+      @include flex(flex, wrap, column, flex-start, flex-start, none);
+  
+  }
+  .title-contactos-container{
+      @include flex(flex, wrap, row, center, center, none);
+      h1{
+          font-family:'Roboto', sans-serif;
+          font-size: 22px;
+          font-weight: 700;
+      }
+  }
+  .paragraph-contactos-container{
+      @include flex(flex, wrap, row, center, center, none);
+      p{
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          font-weight: 300;
+      }
+  }
+  .form-contactos-group{
+      padding: 5px;
+  
+  }
+  .input-contactos{
+      width: 450px;
+      height: 40px;
+      padding-left: 3px;
+      border: 3px solid $color-lightblue;
+      cursor: pointer;
+  }
+  .form-contactos-submit{
+      background-color: $color-lightblue;
+      font-family: 'Roboto', sans-serif;
+      @include font(none, none, 12px, 300, 2px solid $color-black, 3px, none, none, none, 5px, none, 3px 3px, none, none, none, none);
+  } 
+}
+  @media (max-width: 425px){
+    .contactos-container{
+      font-family: 'Roboto', sans-serif;
+      background-color: $color-lightwhite;
+      background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+      background-size: 20px 20px;
+      background-position: 0 0,10px 10px;
+      @include flex(flex, wrap, row, center, center, none);
+      min-height: 100vh;
+  }
+  .form-contactos{
+      background-color: $color-white;
+      max-width: 740px;
+      max-height: 790px;
+      text-align: center;
+      @include font(90%, 90%, none, none, none, 10px, 15px, none, none, none, none, 4.5em 3em, none, none, none, none);
+      @include flex(flex, wrap, column, flex-start, flex-start, none);
+  
+  }
+  .title-contactos-container{
+      @include flex(flex, wrap, row, center, center, none);
+      h1{
+          font-family:'Roboto', sans-serif;
+          font-size: 21px;
+          font-weight: 700;
+      }
+  }
+  .paragraph-contactos-container{
+      @include flex(flex, wrap, row, center, center, none);
+      p{
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+      }
+  }
+  .form-contactos-group{
+      padding: 5px;
+  
+  }
+  .input-contactos{
+      width: 250px;
+      height: 40px;
+      padding-left: 3px;
+      border: 3px solid $color-lightblue;
+      cursor: pointer;
+  }
+  .form-contactos-submit{
+      background-color: $color-lightblue;
+      font-family: 'Roboto', sans-serif;
+      @include font(none, none, 12px, 300, 2px solid $color-black, 3px, none, none, none, 5px, none, 3px 3px, none, none, none, none);
+  }
+  }
+  @media (max-width: 375px){
+    .contactos-container{
+      font-family: 'Roboto', sans-serif;
+      background-color: $color-lightwhite;
+      background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+      background-size: 20px 20px;
+      background-position: 0 0,10px 10px;
+      @include flex(flex, wrap, row, center, center, none);
+      min-height: 100vh;
+  }
+  .form-contactos{
+      background-color: $color-white;
+      max-width: 740px;
+      max-height: 790px;
+      text-align: center;
+      @include font(90%, 90%, none, none, none, 10px, 15px, none, none, none, none, 4.5em 3em, none, none, none, none);
+      @include flex(flex, wrap, column, flex-start, flex-start, none);
+  
+  }
+  .title-contactos-container{
+      @include flex(flex, wrap, row, center, center, none);
+      h1{
+          font-family:'Roboto', sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+      }
+  }
+  .paragraph-contactos-container{
+      @include flex(flex, wrap, row, center, center, none);
+      p{
+          font-family: 'Roboto', sans-serif;
+          font-size: 19px;
+          font-weight: 300;
+      }
+  }
+  .form-contactos-group{
+      padding: 5px;
+  
+  }
+  .input-contactos{
+      width: 150px;
+      height: 40px;
+      padding-left: 3px;
+      border: 3px solid $color-lightblue;
+      cursor: pointer;
+  }
+  .form-contactos-submit{
+      background-color: $color-lightblue;
+      font-family: 'Roboto', sans-serif;
+      @include font(none, none, 12px, 300, 2px solid $color-black, 3px, none, none, none, 5px, none, 3px 3px, none, none, none, none);
+  }
+  }
+  @media (max-width: 320px){
+    .contactos-container{
+      font-family: 'Roboto', sans-serif;
+      background-color: $color-lightwhite;
+      background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+      background-size: 20px 20px;
+      background-position: 0 0,10px 10px;
+      @include flex(flex, wrap, row, center, center, none);
+      min-height: 100vh;
+  }
+  .form-contactos{
+      background-color: $color-white;
+      max-width: 740px;
+      max-height: 790px;
+      text-align: center;
+      @include font(90%, 90%, none, none, none, 10px, 15px, none, none, none, none, 4.5em 3em, none, none, none, none);
+      @include flex(flex, wrap, column, flex-start, flex-start, none);
+  
+  }
+  .title-contactos-container{
+      @include flex(flex, wrap, row, center, center, none);
+      h1{
+          font-family:'Roboto', sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+      }
+  }
+  .paragraph-contactos-container{
+      @include flex(flex, wrap, row, center, center, none);
+      p{
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+      }
+  }
+  .form-contactos-group{
+      padding: 5px;
+  
+  }
+  .input-contactos{
+      width: 150px;
+      height: 40px;
+      padding-left: 3px;
+      border: 3px solid $color-lightblue;
+      cursor: pointer;
+  }
+  .form-contactos-submit{
+      background-color: $color-lightblue;
+      font-family: 'Roboto', sans-serif;
+      @include font(none, none, 12px, 300, 2px solid $color-black, 3px, none, none, none, 5px, none, 3px 3px, none, none, none, none);
+  }
+  }
+
+
+

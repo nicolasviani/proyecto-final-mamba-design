@@ -1,4 +1,4 @@
-// @import "./utilities/variables";
+@import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./base/typo";
 @import "./base/reset";
@@ -6,7 +6,7 @@
 @import "./layout/unite.scss";
 @import "./layout/hombres.scss";
 @import "./layout/mujeres.scss";
-@import "./layout/zapatillas.scss";
+@import "./layout/zapatillas";
 @import "./layout/contactos";
 @import "./layout/compras";
 @import "./layout/mediaQuerys";

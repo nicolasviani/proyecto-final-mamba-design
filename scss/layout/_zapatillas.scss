@@ -4,7 +4,7 @@ h1{
     padding: 5px;
 }
 .carrousel-container{
-@include flex(flex, wrap, row, none, none, none);
+    @include flex(flex, wrap, row, none, none, none);
 }
 #contentitemcarrousel{
     width: 1263px;
@@ -23,35 +23,35 @@ h1{
     width: 100%;
     position: absolute;
     top: 0;
-    @include flex(flex, none, none, space-evenly, center, none);
+    @include flex(flex, none, none, space-between, center, none);
     padding: 20px;
 }
-#card-carrousel-10{
+#card-carrousel-19{
     @include flex(flex, wrap, row, space-evenly, center, none);
 }
-#card-carrousel-11{
-    @extend #card-carrousel-10;
+#card-carrousel-20{
+    @extend #card-carrousel-19;
 }
-#card-carrousel-12{
-    @extend #card-carrousel-10;
+#card-carrousel-21{
+    @extend #card-carrousel-19;
 }
-#card-carrousel-13{
-    @extend #card-carrousel-10;
+#card-carrousel-22{
+    @extend #card-carrousel-19;
 }
-#card-carrousel-14{
-    @extend #card-carrousel-10;
+#card-carrousel-23{
+    @extend #card-carrousel-19;
 }
-#card-carrousel-15{
-    @extend #card-carrousel-10;
+#card-carrousel-24{
+    @extend #card-carrousel-19;
 }
-#card-carrousel-16{
-    @extend #card-carrousel-10;
+#card-carrousel-25{
+    @extend #card-carrousel-19;
 }
-#card-carrousel-17{
-    @extend #card-carrousel-10;
+#card-carrousel-26{
+    @extend #card-carrousel-19;
 }
-#card-carrousel-18{
-    @extend #card-carrousel-10;
+#card-carrousel-27{
+    @extend #card-carrousel-19;
 }
 a{
     text-decoration: none;
