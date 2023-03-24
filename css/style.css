@@ -2248,7 +2248,7 @@ i {
   #contentitemcarrousel {
     width: 768px; }
     #contentitemcarrousel .item-carrousel .card-carrousel .card-container {
-      display: flex; } }
+      display: flex; flex-direction: column;} }
 
 @media (max-width: 425px) {
   #contentitemcarrousel {
