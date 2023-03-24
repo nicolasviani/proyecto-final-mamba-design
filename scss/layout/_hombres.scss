@@ -7,16 +7,37 @@ h1{
     @include flex(flex, wrap, row, none, none, none);
 }
 #contentitemcarrousel{
-    width: 320px;
+    width: 1263px;
     height: 400px;
-    overflow: hidden; 
-}
-.item-carrousel{
-    height: 100%;
-    position: relative;
-}
-.card-carrousel{
-    height: 100%;
+    overflow: hidden;
+    .item-carrousel{
+        height: 100%;
+        position: relative;
+        .card-carrousel{
+            height: 100%;
+            @include flex(flex, wrap, row, space-evenly, center, none);
+            .card-container{
+                width: 210px;
+                height: 377px;
+                padding: 3px 3px;
+                border: 1px solid $color-black;
+                img{
+                    width: 200px;
+                    height: 300px;
+                    border-radius: 3px; 
+                    p{
+                        font-size: 22px;
+                        font-weight: 200;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        &:hover{
+                            transform: scale(1.1,1.1);
+                            transition: transform 100ms 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .flechas-carrousel{
     height: 100%;
@@ -26,34 +47,6 @@ h1{
     @include flex(flex, none, none, space-between, center, none);
     padding: 20px;
 }
-#card-carrousel-1{
-    @include flex(flex, wrap, row, space-evenly, center, none);
-}
-#card-carrousel-2{
-    @extend #card-carrousel-1;
-}
-
-#card-carrousel-3{
-    @extend #card-carrousel-1;
-}
-#card-carrousel-4{
-    @extend #card-carrousel-1;
-}
-#card-carrousel-5{
-    @extend #card-carrousel-1;
-}
-#card-carrousel-6{
-    @extend #card-carrousel-1;
-}
-#card-carrousel-7{
-    @extend #card-carrousel-1;
-}
-#card-carrousel-8{
-    @extend #card-carrousel-1;
-}
-#card-carrousel-9{
-    @extend #card-carrousel-1;
-}
 a{
     text-decoration: none;
 }
@@ -62,25 +55,5 @@ i{
     img{
         width: 15px;
         height: 15px;
-    }
-}
-.card-container{
-    width: 210px;
-    height: 377px;
-    padding: 3px 3px;
-    border: 1px solid $color-black;
-}
-.card-container img{
-    width: 200px;
-    height: 300px;
-    border-radius: 3px;  
-}
-.card-container p{
-    font-size: 22px;
-    font-weight: 200;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    &:hover{
-        transform: scale(1.1,1.1);
-        transition: transform 100ms 0.2s;
     }
 }
