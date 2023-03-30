@@ -26,7 +26,7 @@
     }
 }
 .paragraph-contactos-container{
-    @include flex(flex, wrap, row, center, center, none);
+    @extend .title-contactos-container;
     p{
         font-family: 'Roboto', sans-serif;
         font-size: 18px;

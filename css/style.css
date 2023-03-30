@@ -94,10 +94,10 @@
   align-items: center;
   align-content: center; }
 
-.input-header-container {
+.input-container {
   width: 193px;
   height: 32px;
-  border: 3px solid #000;
+  border: 2px solid #000;
   border-radius: 3PX;
   background-color: #d3d3d3;
   font-weight: 400 solid #000;
@@ -595,29 +595,22 @@ i {
   align-items: flex-start;
   align-content: none; }
 
-.title-contactos-container {
+.title-contactos-container, .paragraph-contactos-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: none; }
-  .title-contactos-container h1 {
+  .title-contactos-container h1, .paragraph-contactos-container h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: 700; }
 
-.paragraph-contactos-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: none; }
-  .paragraph-contactos-container p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 300; }
+.paragraph-contactos-container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300; }
 
 .form-contactos-group {
   padding: 5px; }
@@ -1913,342 +1906,16 @@ i {
     transform: scale(1); } }
 
 @media (max-width: 768px) {
-  .main-container {
-    font-family: "Roboto", sans-serif;
-    background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: none;
-    min-height: 100vh; }
-  .form {
-    background-color: #fff;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    text-align: center; }
-  .form-title {
-    font-size: 27px;
-    margin-bottom: 0.5em; }
-  .form-subtitle {
-    font-weight: 300; }
-  .form-link {
-    font-weight: 400;
-    color: #000; }
-  .form-container {
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em; }
-  .form-group {
-    position: relative;
-    color: #5757577e; }
-  .form_input {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid; }
-  .form-input:not(:placeholder-shown) + .form-label {
-    color: #4d4646; }
-  .form-input:focus + .form-label,
-  .form-input:not(:placeholder-shown) + .form-label {
-    transform: translateY(-12px) scale(0.7);
-    transform-origin: left top;
-    color: #3866f2; }
-  .form-label {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform 0.5s, color 0.3s; }
-  .form_submit {
-    background-color: #3866f2;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 0.8em 0;
-    border: none;
-    border-radius: 0.5em; }
-  .form-line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #3866f2;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform 0.4s; }
-  .form-input:focus ~ .form-line,
-  .form-input:not(:placeholder-shown) ~ .form-line {
-    transform: scale(1); } }
-
-@media (max-width: 425px) {
-  .main-container {
-    font-family: "Roboto", sans-serif;
-    background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: none;
-    min-height: 100vh; }
-  .form {
-    background-color: #fff;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    text-align: center; }
-  .form-title {
-    font-size: 27px;
-    margin-bottom: 0.5em; }
-  .form-subtitle {
-    font-weight: 300; }
-  .form-link {
-    font-weight: 400;
-    color: #000; }
-  .form-container {
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em; }
-  .form-group {
-    position: relative;
-    color: #5757577e; }
-  .form_input {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid; }
-  .form-input:not(:placeholder-shown) + .form-label {
-    color: #4d4646; }
-  .form-input:focus + .form-label,
-  .form-input:not(:placeholder-shown) + .form-label {
-    transform: translateY(-12px) scale(0.7);
-    transform-origin: left top;
-    color: #3866f2; }
-  .form-label {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform 0.5s, color 0.3s; }
-  .form_submit {
-    background-color: #3866f2;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 0.8em 0;
-    border: none;
-    border-radius: 0.5em; }
-  .form-line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #3866f2;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform 0.4s; }
-  .form-input:focus ~ .form-line,
-  .form-input:not(:placeholder-shown) ~ .form-line {
-    transform: scale(1); } }
-
-@media (max-width: 375px) {
-  .main-container {
-    font-family: "Roboto", sans-serif;
-    background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: none;
-    min-height: 100vh; }
-  .form {
-    background-color: #fff;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    text-align: center; }
-  .form-title {
-    font-size: 27px;
-    margin-bottom: 0.5em; }
-  .form-subtitle {
-    font-weight: 300; }
-  .form-link {
-    font-weight: 400;
-    color: #000; }
-  .form-container {
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em; }
-  .form-group {
-    position: relative;
-    color: #5757577e; }
-  .form_input {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid; }
-  .form-input:not(:placeholder-shown) + .form-label {
-    color: #4d4646; }
-  .form-input:focus + .form-label,
-  .form-input:not(:placeholder-shown) + .form-label {
-    transform: translateY(-12px) scale(0.7);
-    transform-origin: left top;
-    color: #3866f2; }
-  .form-label {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform 0.5s, color 0.3s; }
-  .form_submit {
-    background-color: #3866f2;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 0.8em 0;
-    border: none;
-    border-radius: 0.5em; }
-  .form-line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #3866f2;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform 0.4s; }
-  .form-input:focus ~ .form-line,
-  .form-input:not(:placeholder-shown) ~ .form-line {
-    transform: scale(1); } }
-
-@media (max-width: 320px) {
-  .main-container {
-    font-family: "Roboto", sans-serif;
-    background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: none;
-    min-height: 100vh; }
-  .form {
-    background-color: #fff;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    text-align: center; }
-  .form-title {
-    font-size: 27px;
-    margin-bottom: 0.5em; }
-  .form-subtitle {
-    font-weight: 300; }
-  .form-link {
-    font-weight: 400;
-    color: #000; }
-  .form-container {
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em; }
-  .form-group {
-    position: relative;
-    color: #5757577e; }
-  .form_input {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid; }
-  .form-input:not(:placeholder-shown) + .form-label {
-    color: #4d4646; }
-  .form-input:focus + .form-label,
-  .form-input:not(:placeholder-shown) + .form-label {
-    transform: translateY(-12px) scale(0.7);
-    transform-origin: left top;
-    color: #3866f2; }
-  .form-label {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform 0.5s, color 0.3s; }
-  .form_submit {
-    background-color: #3866f2;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 0.8em 0;
-    border: none;
-    border-radius: 0.5em; }
-  .form-line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #3866f2;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform 0.4s; }
-  .form-input:focus ~ .form-line,
-  .form-input:not(:placeholder-shown) ~ .form-line {
-    transform: scale(1); } }
-
-@media (max-width: 768px) {
   #contentitemcarrousel {
     width: 768px; }
     #contentitemcarrousel .item-carrousel .card-carrousel .card-container {
-      display: flex; flex-direction: column;} }
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 200px;
+      height: 367px; }
+      #contentitemcarrousel .item-carrousel .card-carrousel .card-container p {
+        font-size: 16px; } }
 
 @media (max-width: 425px) {
   #contentitemcarrousel {
@@ -2315,14 +1982,14 @@ i {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: none; }
-  .title-contactos-container {
+  .title-contactos-container, .paragraph-contactos-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: none; }
-    .title-contactos-container h1 {
+    .title-contactos-container h1, .paragraph-contactos-container h1 {
       font-family: "Roboto", sans-serif;
       font-size: 22px;
       font-weight: 700; }
@@ -2406,14 +2073,14 @@ i {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: none; }
-  .title-contactos-container {
+  .title-contactos-container, .paragraph-contactos-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: none; }
-    .title-contactos-container h1 {
+    .title-contactos-container h1, .paragraph-contactos-container h1 {
       font-family: "Roboto", sans-serif;
       font-size: 21px;
       font-weight: 700; }
@@ -2497,14 +2164,14 @@ i {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: none; }
-  .title-contactos-container {
+  .title-contactos-container, .paragraph-contactos-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: none; }
-    .title-contactos-container h1 {
+    .title-contactos-container h1, .paragraph-contactos-container h1 {
       font-family: "Roboto", sans-serif;
       font-size: 20px;
       font-weight: 700; }
@@ -2588,14 +2255,14 @@ i {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: none; }
-  .title-contactos-container {
+  .title-contactos-container, .paragraph-contactos-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: none; }
-    .title-contactos-container h1 {
+    .title-contactos-container h1, .paragraph-contactos-container h1 {
       font-family: "Roboto", sans-serif;
       font-size: 20px;
       font-weight: 700; }
