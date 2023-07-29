@@ -30,11 +30,14 @@
 .form-container{
     margin-top: 3em;
     display: grid;
-    gap: 2.5em; 
+    gap: 1.5em; 
 }
 .form-group{
     position: relative;
     color: #5757577e;
+}
+.register a {
+    color: black;
 }
 .form_input{
     width: 100%;
@@ -60,7 +63,6 @@
     position: absolute;
     top: 0;
     left: 5px;
-    transform: translateY(10px);
     transition: transform .5s, color .3s;
 }
 .form_submit{
