@@ -272,11 +272,11 @@
   border-radius: 10px;
   text-align: center; }
 
-.form-title {
+.form-titulo {
   font-size: 2rem;
   margin-bottom: .5em; }
 
-.form-subtitle {
+.form-subtitulo {
   font-weight: 300; }
 
 .form-link {
@@ -288,11 +288,11 @@
   display: grid;
   gap: 1.5em; }
 
-.form-group {
+.form-grupo {
   position: relative;
   color: #5757577e; }
 
-.register a {
+.registrate a {
   color: black; }
 
 .form_input {
@@ -318,7 +318,7 @@
   cursor: pointer;
   position: absolute;
   top: 0;
-  left: 5px;
+  left: 15px;
   transition: transform .5s, color .3s; }
 
 .form_submit {
@@ -331,7 +331,7 @@
   border: 2px solid #000;
   border-radius: .5em; }
 
-.form-line {
+.form-linea {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -342,91 +342,10 @@
   transform: left bottom;
   transition: transform .4s; }
 
-.form-input:focus ~ .form-line,
+.form-input:focus ~ .form-linea,
 .form-input:not(:placeholder-shown) ~ .form-line {
   transform: scale(1); }
-/*login*/
-.container-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-
-/* html {
-  background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
-  height: 100vh;
-} */
-
-main.container-form {
-  display: flex;
-  justify-content: center;
-}
-
-.box-form-container {
-  margin-top: 50px;
-  background-color: white;
-  box-shadow: 0 0 15px 1px rgb(0 0 0 / 40%);
-  padding: 20px 30px;
-  border-radius: 3px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form-title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form-title-text {
-  font-size: 15px;
-  margin: 0;
-  text-transform: uppercase;
-  color: #2C3E50;
-  margin-bottom: 10px;
-}
-
-.form-subtitle-text {
-  font-weight: normal;
-  font-size: 13px;
-  color: #666;
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.form-inputs-container {
-  display: flex;
-  flex-direction: column;
-  width: 260px;
-}
-
-.box-form-input {
-  width: calc(100% - 30px);
-  padding: 15px;
-  margin-bottom: 10px;
-  color: #2C3E50;
-  font-size: 13px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-}
-
-.next-button {
-  width: 100px;
-  background: #27AE60;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 1px;
-  cursor: pointer;
-  padding: 10px;
-  margin: 10px 5px;
-  text-decoration: none;
-  font-size: 14px;
-}
 h1 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
