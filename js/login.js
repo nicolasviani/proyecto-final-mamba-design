@@ -19,13 +19,13 @@ const usuariosRegistrados = [
 
 const usuarioNuevo = {
     nombre: "",
-    emali: "",
+    email: "",
     contraseña: "",
 };
 
 const login = document.querySelector("#mainContainer");
-login = document.createElement("section");
-login.innerHTML = `
+const section = document.createElement("section");
+section.innerHTML = `
                     <form id="form" class="form">
                     <h2 class="form-titulo">Inicia sesion</h2>
                     <p class="form-subtitulo">¿Aun no tenes una cuenta?</p>
@@ -50,3 +50,39 @@ login.innerHTML = `
                     </div>
                     </form>
                             `
+login.appendChild(section);
+
+const usuariosRegistradosJson = localStorage.setItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
+
+
+const nombre = document.querySelector("#name");
+const eMail = document.querySelector("#user");
+const contraseña = document.querySelector("#password");
+const registroNuevo = document.querySelector("#registrate");
+const botonEntrar = document.querySelector(".form-submit");
+
+nombre.addEventListener("input", (event) =>{
+    usuariosRegistrados.nombre = event.target.value;
+});
+
+eMail.addEventListener("input", (event) =>{
+    usuariosRegistrados.email = event.target.value;
+});
+
+contraseña.addEventListener("input", (event) =>{
+    usuariosRegistrados.contraseña = event.target.value;
+});
+
+botonEntrar.addEventListener("submit", (event) =>{
+    event.preventDefault();
+
+    usuarios = localStorage.getItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
+
+    if(nombre != usuariosRegistrados.nombre || eMail != usuariosRegistrados.email || contraseña != usuariosRegistrados.contraseña){
+        console.log("no existis");
+    }else{
+        const usuarioEncontrado = usuariosRegistrados.find((usuarios) => usuarios.email === eMail.value);
+        const saludoDeBienvenida = document.querySelector(".form-container");
+        saludoDeBienvenida.innerHTML = `<span class= "bienbenida"> Bienvenido sr/sra ${usuarioEncontrado.nombre}\n${usuarioEncontrado.email}</span>`
+    }
+});
