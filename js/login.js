@@ -76,13 +76,15 @@ contraseña.addEventListener("input", (event) =>{
 botonEntrar.addEventListener("submit", (event) =>{
     event.preventDefault();
 
-    usuarios = localStorage.getItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
+    usuariosRegistradosJson = localStorage.getItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
+
 
     if(nombre != usuariosRegistrados.nombre || eMail != usuariosRegistrados.email || contraseña != usuariosRegistrados.contraseña){
-        console.log("no existis");
+        const debesRegistrarte = document.querySelector(".form-container");
+        debesRegistrarte.innerHTML =`<h4 class= "respuesta"> No estas registrado </h4>`
     }else{
         const usuarioEncontrado = usuariosRegistrados.find((usuarios) => usuarios.email === eMail.value);
         const saludoDeBienvenida = document.querySelector(".form-container");
-        saludoDeBienvenida.innerHTML = `<span class= "bienbenida"> Bienvenido sr/sra ${usuarioEncontrado.nombre}\n${usuarioEncontrado.email}</span>`
+        saludoDeBienvenida.innerHTML = `<span class= "respuesta"> Bienvenido sr/sra ${usuarioEncontrado.nombre}\n${usuarioEncontrado.email}</span>`
     }
 });
