@@ -1,92 +1,128 @@
-.main-container{
+#contenedorGeneral {
     font-family: 'Roboto', sans-serif;
-    background-color: $color-lightwhite;
-    background-image:  radial-gradient($color-darkblue 0.5px, transparent 0.5px), radial-gradient($color-darkblue 0.5px, $color-lightwhite 0.5px);
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
-    @include flex(flex, wrap, row, center, center, none);
-    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: none;
+    min-height: 710px; 
 }
-.form{  
-    background-color: $color-white;
+.section-container{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 10px 10px,10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: none;
+    min-height: 100vh; 
+}
+
+  .form {
+    background-color: #fff;
     margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
+    width: 100%;
+    max-width: 320px;
+    padding: 3em 2.5em;
     border-radius: 10px;
-    text-align: center;
-}
-.form-titulo{
+    text-align: center; }
+  
+  .form-titulo {
     font-size: 2rem;
-    margin-bottom: .5em;
-}
-.form-subtitulo{
-    font-weight: 300;
-}
-.form-link{
+    margin-bottom: .5em; }
+  
+  .form-subtitulo {
+    font-weight: 300; }
+  
+  .form-link {
     font-weight: 400;
-    color: $color-black;
-}
-.form-container{
-    margin-top: 3em;
+    color: #000; }
+  
+  .form-container {
+    margin-top: 1em;
     display: grid;
-    gap: 1.5em; 
-}
-.form-grupo{
+    gap: 1.5em; }
+
+  .form-grupo {
     position: relative;
-    color: #5757577e;
-}
-.registrate a {
-    color: black;
-}
-.form_input{
+    color: #5757577e; }
+  
+  .registrate a {
+    color: black; }
+  
+  .form_input {
     width: 100%;
     background: none;
-    color: $color-gray;
+    color: #706c6c;
     font-size: 1rem;
     padding: .6em .3em;
-    border: 2px solid $color-lightblue;
+    border: 2px solid #3866f2;
     outline: none;
-    border-bottom: 1px solid $color-lightblue;
-}
-.form-input:not(:placeholder-shown) + .form-label{
-    color: $color-marron; 
-}
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label{
-    transform: translateY(-12px) scale(.7); 
+    border-bottom: 1px solid #3866f2; }
+  
+  .form-input:not(:placeholder-shown) + .form-label {
+    color: #4d4646; }
+  
+  .form-input:focus + .form-label,
+  .form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-12px) scale(0.7);
     transform-origin: left top;
-    color: $color-lightblue;
-}
-.form-label{
+    color: #3866f2; }
+  
+  .form-label-1 {
     cursor: pointer;
     position: absolute;
     top: 0;
-    left: 15px;
-    transition: transform .5s, color .3s;
-}
-.form_submit{
-    background-color: $color-lightblue;
-    color: $color-white;
+    left: 32px;
+    transition: transform .5s, color .3s; }
+  
+  .form_submit {
+    background-color: #3866f2;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1rem;
     padding: .8em 0;
-    border: 2px solid $color-black;
-    border-radius: .5em;
-}
-.form-linea{
+    border: 2px solid #000;
+    border-radius: .5em; }
+  
+  .form-linea {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: $color-lightblue;
     transform: scale(0);
     transform: left bottom;
-    transition: transform .4s;
-}
-.form-input:focus ~ .form-linea,
-.form-input:not(:placeholder-shown) ~ .form-line{
-    transform: scale(1);
-}
+    transition: transform .4s; }
+  
+  .form-input:focus ~ .form-linea,
+  .form-input:not(:placeholder-shown) ~ .form-line {
+    transform: scale(1); }
+
+    .registrate a{
+        text-decoration: none;
+        font-size: small;
+        font-weight: 400;
+    }
+
+  .boton{
+    background-color: rgb(117, 243, 117);
+    color: #000;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: .25rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    padding: .3em .1em;
+    margin: 4rem;
+  }

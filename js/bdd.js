@@ -1,0 +1,20 @@
+const baseDeDatos = [
+    {
+        nombre: "nicolas",
+        email: "viani.nicolas.87@gmail.com",
+        contraseña: "1234",
+    },
+    {
+        nombre: "daniel",
+        email: "daniel.villajuan@gmail.com",
+        contraseña: "profesorcoder",
+    },
+    {
+        nombre: "julieta",
+        email: "julieta.viani.pacheco@gmail.com",
+        contraseña: "soyjuly",
+    },
+    
+];
+
+export default baseDeDatos;

@@ -1,90 +1,73 @@
-const usuariosRegistrados = [
-    {
-        nombre: "nicolas",
-        email: "viani.nicolas.87@gmail.com",
-        contraseña: "1234",
-    },
-    {
-        nombre: "daniel",
-        email: "daniel.villajuan@gmail.com",
-        contraseña: "profesorcoder",
-    },
-    {
-        nombre: "julieta",
-        email: "julieta.viani.pacheco@gmail.com",
-        contraseña: "soyjuly",
-    },
-    
-];
+import baseDeDatos from '../js/bdd.js';
 
-const usuarioNuevo = {
+const main = document.querySelector("#contenedorGeneral");
+const section = document.createElement("section");
+section.classList.add("main-container");
+section.innerHTML = `
+                <form id="form" class="form">
+                    <h2 class="form-titulo">Inicia sesion</h2>
+                    <p class="form-subtitulo">¿Aun no tenes una cuenta?</p>
+                    <div class="form-container">
+                        <div class="form-grupo">
+                            <input type="text" name="nombre" class="form-input" placeholder="">
+                            <label for="name" class="form-label-1">Nombre</label>
+                            <span class="form-linea"></span>
+                        </div>
+                        <div class="form-grupo">
+                            <input type="email" name="email" class="form-input" placeholder="">
+                            <label for="user" class="form-label-1">E-mail</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-grupo">
+                            <input type="text"  name="contraseña" class="form-input" placeholder="">
+                            <label for="password" class="form-label-1">Contraseña</label>
+                            <span class="form-line"></span>
+
+                        <div class="form-container">
+                            <button id="enviar" class="boton"> Iniciar sesion </button>
+                        </div>
+                    </div>
+                </form>
+                `
+
+main.appendChild(section);
+
+const user = {
     nombre: "",
     email: "",
     contraseña: "",
 };
 
-const login = document.querySelector("#mainContainer");
-const section = document.createElement("section");
-section.innerHTML = `
-                    <form id="form" class="form">
-                    <h2 class="form-titulo">Inicia sesion</h2>
-                    <p class="form-subtitulo">¿Aun no tenes una cuenta?</p>
-                    <div class="form-container">
-                        <div class="form-grupo">
-                            <input type="text" id="name" class="form-input" placeholder="">
-                            <label for="name" class="form-label">Nombre</label>
-                            <span class="form-linea"></span>
-                        </div>
-                        <div class="form-grupo">
-                            <input type="text" id="user" class="form-input" placeholder="">
-                            <label for="user" class="form-label">E-mail</label>
-                            <span class="form-line"></span>
-                        </div>
-                        <div class="form-grupo">
-                            <input type="text" id="password" class="form-input" placeholder="">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <span class="form-line"></span>
-                        </div>
-                        <div id="registrate" class="registrate"><a href="./registrate.html">Registrate</a></div>
-                        <input type="submit" class="form-submit" value="entrar">
-                    </div>
-                    </form>
-                            `
-login.appendChild(section);
+const usuariosRegistrados = JSON.parse(localStorage.getItem("usuario"));
 
-const usuariosRegistradosJson = localStorage.setItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
+const form = document.querySelector("#form");
+const inputs = document.querySelectorAll("input");
+const botonIniciarSesion = document.querySelector("#enviar");
 
+const bienvenida = nombre =>{
+    form.innerHTML = `<h3 class="form-titulo"> Bienvenido ${nombre} a Mamba Desing... </h3> `
+};
 
-const nombre = document.querySelector("#name");
-const eMail = document.querySelector("#user");
-const contraseña = document.querySelector("#password");
-const registroNuevo = document.querySelector("#registrate");
-const botonEntrar = document.querySelector(".form-submit");
+const bienvenidaUndefined = () => {
+    form.innerHTML = `<h3 class="form-titulo"> No estas registrado... </h3>
+                        <div id="registrate" class="registrate">
+                            <button class="boton"><a href="./registrate.html">Registrate</a></button>
+                        </div>                              
+                        `
+};
 
-nombre.addEventListener("input", (event) =>{
-    usuariosRegistrados.nombre = event.target.value;
-});
-
-eMail.addEventListener("input", (event) =>{
-    usuariosRegistrados.email = event.target.value;
-});
-
-contraseña.addEventListener("input", (event) =>{
-    usuariosRegistrados.contraseña = event.target.value;
-});
-
-botonEntrar.addEventListener("submit", (event) =>{
-    event.preventDefault();
-
-    usuariosRegistradosJson = localStorage.getItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
-
-
-    if(nombre != usuariosRegistrados.nombre || eMail != usuariosRegistrados.email || contraseña != usuariosRegistrados.contraseña){
-        const debesRegistrarte = document.querySelector(".form-container");
-        debesRegistrarte.innerHTML =`<h4 class= "respuesta"> No estas registrado </h4>`
+botonIniciarSesion.addEventListener("click",() =>{
+    const usuarios = baseDeDatos.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
+    if(usuarios != undefined){
+        bienvenida(usuarios.nombre);
+        localStorage.setItem("usuario",JSON.stringify(usuarios));
     }else{
-        const usuarioEncontrado = usuariosRegistrados.find((usuarios) => usuarios.email === eMail.value);
-        const saludoDeBienvenida = document.querySelector(".form-container");
-        saludoDeBienvenida.innerHTML = `<span class= "respuesta"> Bienvenido sr/sra ${usuarioEncontrado.nombre}\n${usuarioEncontrado.email}</span>`
+        bienvenidaUndefined();
     }
+});
+
+inputs.forEach((elemento) =>{
+    elemento.addEventListener("input", (event) =>{
+        user[event.target.name] = event.target.value;
+    });
 });

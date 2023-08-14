@@ -662,16 +662,16 @@ const productos =[
 const contenedorProductos = document.querySelector("#contenedorProductos");
 console.log(contenedorProductos);
 
-const mostrarProductos (productos) =>{
+const mostrarProductos = (productos) =>{
     productos.forEach((producto) => {
         const cardProductos = document.createElement("section");
         cardProductos.setAttribute("class", "producto");
         cardProductos.innerHTML =` 
-                                <img class="producto-imagen" src="${producto.image}" alt="${product.name}">
+                                <img class="producto-imagen" src="${producto.image}" alt="${producto.name}">
                                 <div class="productos-detalles">
-                                    <h3 class="producto-titulo">${product.name}</h3>
-                                    <p class="producto-precio">${product.price}</p>
-                                    <button id="${product.id}" class="producto-agregar">Agregar</button>
+                                    <h3 class="producto-titulo">${producto.name}</h3>
+                                    <p class="producto-precio">${producto.price}</p>
+                                    <button id="${producto.id}" class="producto-agregar">Agregar</button>
                                 </div>
                                 `
     });
