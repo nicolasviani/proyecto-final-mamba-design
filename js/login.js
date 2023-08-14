@@ -38,7 +38,9 @@ const user = {
     contraseña: "",
 };
 
-const usuariosRegistrados = JSON.parse(localStorage.getItem("usuario"));
+if(!localStorage.getItem("usuariosRegistrados")){
+    localStorage.setItem("usuariosRegistrados",JSON.stringify(usuariosRegistardos));
+}
 
 const form = document.querySelector("#form");
 const inputs = document.querySelectorAll("input");
