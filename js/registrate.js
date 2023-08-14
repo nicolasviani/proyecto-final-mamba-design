@@ -8,28 +8,28 @@ section.innerHTML = `
                     <p class="form-subtitulo">Mamba Design...</p>
                     <div class="form-container">
                         <div class="form-grupo">
-                            <input type="text" id="name" name="nombre" class="form-input" placeholder="">
-                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" id="name" name="nombre" class="form-input" placeholder="Nombre">
+                            <label for="Nombre" class="form-label"></label>
                             <span class="form-linea"></span>
                         </div>
                         <div class="form-grupo">
-                        <input type="text" id="lastName" name="apellido" class="form-input" placeholder="">
-                        <label for="name" class="form-label">Apellido</label>
+                        <input type="text" id="lastName" name="apellido" class="form-input" placeholder="Apellido">
+                        <label for="Apellido" class="form-label"></label>
                         <span class="form-linea"></span>
                     </div>
                         <div class="form-grupo">
-                            <input type="email" id="email" name="email" class="form-input" placeholder="">
-                            <label for="user" class="form-label">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="E-mail">
+                            <label for="E-mail" class="form-label"></label>
                             <span class="form-line"></span>
                         </div>
                         <div class="form-grupo">
-                            <input type="text" id="password" name="contarseña" class="form-input" placeholder="">
-                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="text" id="password" name="contarseña" class="form-input" placeholder="Contraseña">
+                            <label for="Contraseña" class="form-label"></label>
                             <span class="form-line"></span>
                         </div>
                         <div class="form-grupo">
-                        <input type="text" id="confirmPassword" name="confirma contraseña" class="form-input" placeholder="">
-                        <label for="password" class="form-label">Confirma contraseña</label>
+                        <input type="text" id="confirmPassword" name="confirma contraseña" class="form-input" placeholder="Conf.contraseña">
+                        <label for="Conf.contraseña" class="form-label"></label>
                         <span class="form-line"></span>
                     </div>
                     </div>

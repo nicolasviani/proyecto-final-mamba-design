@@ -9,18 +9,18 @@ section.innerHTML = `
                     <p class="form-subtitulo">¿Aun no tenes una cuenta?</p>
                     <div class="form-container">
                         <div class="form-grupo">
-                            <input type="text" name="nombre" class="form-input" placeholder="">
-                            <label for="name" class="form-label-1">Nombre</label>
+                            <input type="text" name="nombre" class="form-input" placeholder="Nombre">
+                            <label for="name" class="form-label-1"></label>
                             <span class="form-linea"></span>
                         </div>
                         <div class="form-grupo">
-                            <input type="email" name="email" class="form-input" placeholder="">
-                            <label for="user" class="form-label-1">E-mail</label>
+                            <input type="email" name="email" class="form-input" placeholder="E-mail">
+                            <label for="user" class="form-label-1"></label>
                             <span class="form-line"></span>
                         </div>
                         <div class="form-grupo">
-                            <input type="text"  name="contraseña" class="form-input" placeholder="">
-                            <label for="password" class="form-label-1">Contraseña</label>
+                            <input type="text"  name="contraseña" class="form-input" placeholder="Contraseña">
+                            <label for="password" class="form-label-1"></label>
                             <span class="form-line"></span>
 
                         <div class="form-container">
@@ -38,8 +38,10 @@ const user = {
     contraseña: "",
 };
 
+const usuariosRegistrados = JSON.parse(localStorage.getItem("usuariosRegistrados")) || baseDeDatos;
+
 if(!localStorage.getItem("usuariosRegistrados")){
-    localStorage.setItem("usuariosRegistrados",JSON.stringify(usuariosRegistardos));
+    localStorage.setItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
 }
 
 const form = document.querySelector("#form");
@@ -59,7 +61,7 @@ const bienvenidaUndefined = () => {
 };
 
 botonIniciarSesion.addEventListener("click",() =>{
-    const usuarios = baseDeDatos.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
+    const usuarios = usuariosRegistrados.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
     if(usuarios != undefined){
         bienvenida(usuarios.nombre);
         localStorage.setItem("usuario",JSON.stringify(usuarios));
