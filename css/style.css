@@ -795,6 +795,33 @@ i {
   padding-left: none;
   padding-right: none; }
 
+.cards-container {
+  width: 1263px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: none; }
+
+.card-container {
+  width: 210px;
+  height: 377px;
+  padding: 3px 3px;
+  border: 1px solid #000; }
+  .card-container img {
+    width: 200px;
+    height: 300px;
+    border-radius: 3px; }
+  .card-container p {
+    font-size: 22px;
+    font-weight: 200;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .card-container a {
+    text-decoration: none;
+    color: #000; }
+
 @media (max-width: 768px) {
   .header-container {
     background-color: #fff;
