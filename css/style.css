@@ -274,105 +274,82 @@
   justify-content: center;
   align-items: center;
   align-content: none;
-  min-height: 710px; }
-
-.section-container {
-  font-family: 'Roboto', sans-serif;
-  background-color: #e5e5f7;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-  background-size: 20px 20px;
-  background-position: 10px 10px,10px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: none;
-  min-height: 100vh; }
+  height: 500px; }
 
 .form {
   background-color: #fff;
   margin: auto;
-  width: 100%;
   max-width: 320px;
   padding: 3em 2.5em;
   border-radius: 10px;
-  text-align: center; }
-
-.form-titulo {
-  font-size: 2rem;
-  margin-bottom: .5em; }
-
-.form-subtitulo {
-  font-weight: 300; }
-
-.form-link {
-  font-weight: 400;
-  color: #000; }
-
-.form-container {
-  margin-top: 1em;
-  display: grid;
-  gap: 1.5em; }
-
-.form-grupo {
-  position: relative;
-  color: #5757577e; }
-
-.registrate a {
-  color: black; }
-
-.form_input {
-  width: 100%;
-  background: none;
-  color: #706c6c;
-  font-size: 1rem;
-  padding: .6em .3em;
-  border: 2px solid #3866f2;
-  outline: none;
-  border-bottom: 1px solid #3866f2; }
-
-.form-input:not(:placeholder-shown) + .form-label {
-  color: #4d4646; }
-
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
-  transform: translateY(-12px) scale(0.7);
-  transform-origin: left top;
-  color: #3866f2; }
-
-.form-label-1 {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 32px;
-  transition: transform .5s, color .3s; }
-
-.form_submit {
-  background-color: #3866f2;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: .8em 0;
-  border: 2px solid #000;
-  border-radius: .5em; }
-
-.form-linea {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  transform: scale(0);
-  transform: left bottom;
-  transition: transform .4s; }
-
-.form-input:focus ~ .form-linea,
-.form-input:not(:placeholder-shown) ~ .form-line {
-  transform: scale(1); }
+  text-align: center;
+  outline: none; }
+  .form .form-titulo {
+    font-size: 2rem;
+    margin-bottom: .5em; }
+    .form .form-titulo .form-subtitulo {
+      font-weight: 300; }
+      .form .form-titulo .form-subtitulo .form-link {
+        font-weight: 400;
+        color: #000; }
+        .form .form-titulo .form-subtitulo .form-link .form-container {
+          margin-top: 1em;
+          display: grid;
+          gap: 1.5em; }
+          .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo {
+            position: relative;
+            color: #5757577e; }
+            .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input {
+              width: 100%;
+              background: none;
+              color: #706c6c;
+              font-size: 1rem;
+              padding: .6em .3em;
+              border: 2px solid #3866f2;
+              outline: none;
+              border-bottom: 1px solid #3866f2; }
+              .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label {
+                color: #4d4646; }
+                .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:focus + .form-label,
+                .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:not(:placeholder-shown) + .form-label {
+                  transform: translateY(-12px) scale(0.7);
+                  transform-origin: left top;
+                  color: #3866f2; }
+                  .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:focus + .form-label .form-label-1,
+                  .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:not(:placeholder-shown) + .form-label .form-label-1 {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    left: 32px;
+                    transition: transform .5s, color .3s; }
+                    .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:focus + .form-label .form-label-1 .form_submit,
+                    .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:not(:placeholder-shown) + .form-label .form-label-1 .form_submit {
+                      background-color: #3866f2;
+                      color: #fff;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 300;
+                      font-size: 1rem;
+                      padding: .8em 0;
+                      border: 2px solid #000;
+                      border-radius: .5em; }
+                      .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:focus + .form-label .form-label-1 .form_submit .form-linea,
+                      .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:not(:placeholder-shown) + .form-label .form-label-1 .form_submit .form-linea {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        transform: scale(0);
+                        transform: left bottom;
+                        transition: transform .4s; }
+                        .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:focus + .form-label .form-label-1 .form_submit .form-linea .form-input:focus ~ .form-linea,
+                        .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:focus + .form-label .form-label-1 .form_submit .form-linea .form-input:not(:placeholder-shown) ~ .form-line,
+                        .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:not(:placeholder-shown) + .form-label .form-label-1 .form_submit .form-linea .form-input:focus ~ .form-linea,
+                        .form .form-titulo .form-subtitulo .form-link .form-container .form-grupo .form_input .form-input:not(:placeholder-shown) + .form-label .form-input:not(:placeholder-shown) + .form-label .form-label-1 .form_submit .form-linea .form-input:not(:placeholder-shown) ~ .form-line {
+                          transform: scale(1); }
 
 .registrate a {
+  color: black;
   text-decoration: none;
   font-size: small;
   font-weight: 400; }
