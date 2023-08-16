@@ -177,7 +177,7 @@
     border-radius: 5px;
     padding: 3px 3px; }
 
-.cards-container {
+.cards-container-index {
   width: 1263px;
   height: 400px;
   display: flex;
@@ -187,20 +187,20 @@
   align-items: center;
   align-content: none; }
 
-.card-container {
+.card-container-index {
   width: 210px;
   height: 400px;
   padding: 3px 3px;
   border: 1px solid #000; }
-  .card-container img {
+  .card-container-index img {
     width: 200px;
     height: 300px;
     border-radius: 3px; }
-  .card-container p {
+  .card-container-index p {
     font-size: 22px;
     font-weight: 200;
     font-family: Georgia, 'Times New Roman', Times, serif; }
-  .card-container a {
+  .card-container-index a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -494,22 +494,14 @@ h1 {
   text-align: center;
   padding: 5px; }
 
-.carrousel-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: none;
-  align-items: none;
-  align-content: none; }
-
-#contentitemcarrousel {
+#contentItemCarrouselHombres {
   width: 1263px;
   height: 400px;
   overflow: hidden; }
-  #contentitemcarrousel .item-carrousel {
+  #contentItemCarrouselHombres .item-carrousel-hombres {
     height: 100%;
     position: relative; }
-    #contentitemcarrousel .item-carrousel .card-carrousel {
+    #contentItemCarrouselHombres .item-carrousel-hombres .card-carrousel-hombres {
       height: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -517,26 +509,34 @@ h1 {
       justify-content: space-evenly;
       align-items: center;
       align-content: none; }
-      #contentitemcarrousel .item-carrousel .card-carrousel .card-container {
+      #contentItemCarrouselHombres .item-carrousel-hombres .card-carrousel-hombres .card-container-hombres {
         width: 210px;
         height: 395px;
         padding: 3px 3px;
         border: 1px solid #000; }
-        #contentitemcarrousel .item-carrousel .card-carrousel .card-container img {
+        #contentItemCarrouselHombres .item-carrousel-hombres .card-carrousel-hombres .card-container-hombres img {
           width: 200px;
           height: 300px;
           border-radius: 3px; }
-          #contentitemcarrousel .item-carrousel .card-carrousel .card-container img p {
+          #contentItemCarrouselHombres .item-carrousel-hombres .card-carrousel-hombres .card-container-hombres img p {
             font-size: 22px;
             font-weight: 200;
             font-family: Georgia, 'Times New Roman', Times, serif; }
-            #contentitemcarrousel .item-carrousel .card-carrousel .card-container img p:hover {
+            #contentItemCarrouselHombres .item-carrousel-hombres .card-carrousel-hombres .card-container-hombres img p:hover {
               transform: scale(1.1, 1.1);
               transition: transform 100ms 0.2s; }
-              #contentitemcarrousel .item-carrousel .card-carrousel .card-container img p:hover a {
-                text-decoration: none; }
+              #contentItemCarrouselHombres .item-carrousel-hombres .card-carrousel-hombres .card-container-hombres img p:hover a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                font-size: 20px;
+                font-weight: 200;
+                text-decoration: none;
+                color: #000; }
 
-.flechas-carrousel {
+.flechas-carrousel-hombres {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -560,98 +560,49 @@ h1 {
   text-align: center;
   padding: 5px; }
 
-.carrousel-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: none;
-  align-items: none;
-  align-content: none; }
-
-#contentitemcarrousel {
+#contentItemCarrouselMujeres {
   width: 1263px;
   height: 400px;
   overflow: hidden; }
+  #contentItemCarrouselMujeres .item-carrousel-mujeres {
+    height: 100%;
+    position: relative; }
+    #contentItemCarrouselMujeres .item-carrousel-mujeres .card-carrousel-mujeres {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: none; }
+      #contentItemCarrouselMujeres .item-carrousel-mujeres .card-carrousel-mujeres .card-container-mujeres {
+        width: 210px;
+        height: 395px;
+        padding: 3px 3px;
+        border: 1px solid #000; }
+        #contentItemCarrouselMujeres .item-carrousel-mujeres .card-carrousel-mujeres .card-container-mujeres img {
+          width: 200px;
+          height: 300px;
+          border-radius: 3px; }
+          #contentItemCarrouselMujeres .item-carrousel-mujeres .card-carrousel-mujeres .card-container-mujeres img p {
+            font-size: 22px;
+            font-weight: 200;
+            font-family: Georgia, 'Times New Roman', Times, serif; }
+            #contentItemCarrouselMujeres .item-carrousel-mujeres .card-carrousel-mujeres .card-container-mujeres img p:hover {
+              transform: scale(1.1, 1.1);
+              transition: transform 100ms 0.2s; }
+              #contentItemCarrouselMujeres .item-carrousel-mujeres .card-carrousel-mujeres .card-container-mujeres img p:hover a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                font-size: 20px;
+                font-weight: 200;
+                text-decoration: none;
+                color: #000; }
 
-.item-carrousel {
-  height: 100%;
-  position: relative; }
-
-.card-carrousel {
-  height: 100%; }
-
-.flechas-carrousel {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-wrap: none;
-  flex-direction: none;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: none;
-  padding: 20px; }
-
-#card-carrousel-10, #card-carrousel-11, #card-carrousel-12, #card-carrousel-13, #card-carrousel-14, #card-carrousel-15, #card-carrousel-16, #card-carrousel-17, #card-carrousel-18 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: none; }
-
-a {
-  text-decoration: none; }
-
-i {
-  color: #000; }
-  i img {
-    width: 15px;
-    height: 15px; }
-
-.card-container {
-  width: 210px;
-  height: 377px;
-  padding: 3px 3px;
-  border: 1px solid #000; }
-
-.card-container img {
-  width: 200px;
-  height: 300px;
-  border-radius: 3px; }
-
-.card-container p {
-  font-size: 22px;
-  font-weight: 200;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
-
-h1 {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  padding: 5px; }
-
-.carrousel-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: none;
-  align-items: none;
-  align-content: none; }
-
-#contentitemcarrousel {
-  width: 1263px;
-  height: 400px;
-  overflow: hidden; }
-
-.item-carrousel {
-  height: 100%;
-  position: relative; }
-
-.card-carrousel {
-  height: 100%; }
-
-.flechas-carrousel {
+.flechas-carrousel-mujeres {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -664,38 +615,77 @@ h1 {
   align-content: none;
   padding: 20px; }
 
-#card-carrousel-19, #card-carrousel-20, #card-carrousel-21, #card-carrousel-22, #card-carrousel-23, #card-carrousel-24, #card-carrousel-25, #card-carrousel-26, #card-carrousel-27 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: none; }
-
-a {
-  text-decoration: none; }
-
 i {
   color: #000; }
   i img {
     width: 15px;
     height: 15px; }
 
-.card-container {
-  width: 210px;
-  height: 377px;
-  padding: 3px 3px;
-  border: 1px solid #000; }
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 5px; }
 
-.card-container img {
-  width: 200px;
-  height: 300px;
-  border-radius: 3px; }
+#contentItemCarrouselZapatillas {
+  width: 1263px;
+  height: 400px;
+  overflow: hidden; }
+  #contentItemCarrouselZapatillas .item-carrousel-zapatillas {
+    height: 100%;
+    position: relative; }
+    #contentItemCarrouselZapatillas .item-carrousel-zapatillas .card-carrousel-zapatillas {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: none; }
+      #contentItemCarrouselZapatillas .item-carrousel-zapatillas .card-carrousel-zapatillas .card-container-zapatillas {
+        width: 210px;
+        height: 395px;
+        padding: 3px 3px;
+        border: 1px solid #000; }
+        #contentItemCarrouselZapatillas .item-carrousel-zapatillas .card-carrousel-zapatillas .card-container-zapatillas img {
+          width: 200px;
+          height: 300px;
+          border-radius: 3px; }
+          #contentItemCarrouselZapatillas .item-carrousel-zapatillas .card-carrousel-zapatillas .card-container-zapatillas img p {
+            font-size: 22px;
+            font-weight: 200;
+            font-family: Georgia, 'Times New Roman', Times, serif; }
+            #contentItemCarrouselZapatillas .item-carrousel-zapatillas .card-carrousel-zapatillas .card-container-zapatillas img p:hover {
+              transform: scale(1.1, 1.1);
+              transition: transform 100ms 0.2s; }
+              #contentItemCarrouselZapatillas .item-carrousel-zapatillas .card-carrousel-zapatillas .card-container-zapatillas img p:hover a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                font-size: 20px;
+                font-weight: 200;
+                text-decoration: none;
+                color: #000; }
 
-.card-container p {
-  font-size: 22px;
-  font-weight: 200;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
+.flechas-carrousel-zapatillas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-wrap: none;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: center;
+  align-content: none;
+  padding: 20px; }
+
+i {
+  color: #000; }
+  i img {
+    width: 15px;
+    height: 15px; }
 
 .contactos-container {
   font-family: 'Roboto', sans-serif;
@@ -965,18 +955,22 @@ i {
     border-radius: 5px;
     padding: 3px 3px; }
 
-#contenedorProductos {
+.contenedor-productos {
   width: 1263px;
-  height: 500px; }
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .cards-container {
   width: 1263px;
   height: 500px;
   display: flex;
-  flex-wrap: none;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: none;
+  align-items: center;
   align-content: none; }
 
 .card-container {

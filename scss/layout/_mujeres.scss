@@ -3,59 +3,62 @@ h1{
     text-align: center;
     padding: 5px;
 }
-.carrousel-container{
-@include flex(flex, wrap, row, none, none, none);
-}
-#contentitemcarrousel{
+// .carrousel-container{
+//     @include flex(flex, wrap, row, none, none, none);
+// }
+#contentItemCarrouselMujeres{
     width: 1263px;
     height: 400px;
-    overflow: hidden; 
+    overflow: hidden;
+    .item-carrousel-mujeres{
+        height: 100%;
+        position: relative;
+        .card-carrousel-mujeres{
+            height: 100%;
+            @include flex(flex, wrap, row, space-evenly, center, none);
+            .card-container-mujeres{
+                width: 210px;
+                height: 395px;
+                padding: 3px 3px;
+                border: 1px solid $color-black;
+                img{
+                    width: 200px;
+                    height: 300px;
+                    border-radius: 3px; 
+                    p{
+                        font-size: 22px;
+                        font-weight: 200;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        &:hover{
+                            transform: scale(1.1,1.1);
+                            transition: transform 100ms 0.2s;
+                            a{
+                                text-decoration: none;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: flex-end;
+                                font-size: 20px;
+                                font-weight: 200;
+                                text-decoration: none;
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-.item-carrousel{
-    height: 100%;
-    position: relative;
-}
-.card-carrousel{
-    height: 100%;
-}
-.flechas-carrousel{
+.flechas-carrousel-mujeres{
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-    @include flex(flex, none, none, space-evenly, center, none);
+    @include flex(flex, none, none, space-between, center, none);
     padding: 20px;
 }
-#card-carrousel-10{
-    @include flex(flex, wrap, row, space-evenly, center, none);
-}
-#card-carrousel-11{
-    @extend #card-carrousel-10;
-}
-#card-carrousel-12{
-    @extend #card-carrousel-10;
-}
-#card-carrousel-13{
-    @extend #card-carrousel-10;
-}
-#card-carrousel-14{
-    @extend #card-carrousel-10;
-}
-#card-carrousel-15{
-    @extend #card-carrousel-10;
-}
-#card-carrousel-16{
-    @extend #card-carrousel-10;
-}
-#card-carrousel-17{
-    @extend #card-carrousel-10;
-}
-#card-carrousel-18{
-    @extend #card-carrousel-10;
-}
-a{
-    text-decoration: none;
-}
+
 i{
     color: $color-black;
     img{
@@ -63,19 +66,102 @@ i{
         height: 15px;
     }
 }
-.card-container{
-    width: 210px;
-    height: 377px;
-    padding: 3px 3px;
-    border: 1px solid $color-black;
-}
-.card-container img{
-    width: 200px;
-    height: 300px;
-    border-radius: 3px;  
-}
-.card-container p{
-    font-size: 22px;
-    font-weight: 200;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
+
+
+
+
+
+// h1{
+//     font-family:'Roboto', sans-serif;
+//     text-align: center;
+//     padding: 5px;
+// }
+// .carrousel-container{
+// @include flex(flex, wrap, row, none, none, none);
+// }
+// #contentitemcarrousel{
+//     width: 1263px;
+//     height: 420px;
+//     overflow: hidden; 
+// }
+// .item-carrousel{
+//     height: 100%;
+//     position: relative;
+// }
+// .card-carrousel{
+//     height: 100%;
+// }
+// .flechas-carrousel{
+//     height: 100%;
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     @include flex(flex, none, none, space-evenly, center, none);
+//     padding: 20px;
+// }
+// #card-carrousel-10{
+//     @include flex(flex, wrap, row, space-evenly, center, none);
+// }
+// #card-carrousel-11{
+//     @extend #card-carrousel-10;
+// }
+// #card-carrousel-12{
+//     @extend #card-carrousel-10;
+// }
+// #card-carrousel-13{
+//     @extend #card-carrousel-10;
+// }
+// #card-carrousel-14{
+//     @extend #card-carrousel-10;
+// }
+// #card-carrousel-15{
+//     @extend #card-carrousel-10;
+// }
+// #card-carrousel-16{
+//     @extend #card-carrousel-10;
+// }
+// #card-carrousel-17{
+//     @extend #card-carrousel-10;
+// }
+// #card-carrousel-18{
+//     @extend #card-carrousel-10;
+// }
+// a{
+//     text-decoration: none;
+// }
+// i{
+//     color: $color-black;
+//     img{
+//         width: 15px;
+//         height: 15px;
+//     }
+// }
+// .card-container-mujeres{
+//     width: 210px;
+//     height: 397px;
+//     padding: 3px 3px;
+//     border: 1px solid $color-black;
+// }
+// .card-container-mujeres img{
+//     width: 200px;
+//     height: 300px;
+//     border-radius: 3px;  
+// }
+// .card-container-mujeres p{
+//     font-size: 22px;
+//     font-weight: 200;
+//     font-family: Georgia, 'Times New Roman', Times, serif;
+// }
+
+// .card-container-mujeres a{
+//     text-decoration: none;
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: flex-end;
+//     font-size: 20px;
+//     font-weight: 200;
+//     text-decoration: none;
+//     color: $color-black;
+// }

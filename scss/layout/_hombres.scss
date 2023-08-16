@@ -3,20 +3,20 @@ h1{
     text-align: center;
     padding: 5px;
 }
-.carrousel-container{
-    @include flex(flex, wrap, row, none, none, none);
-}
-#contentitemcarrousel{
+// .carrousel-container{
+//     @include flex(flex, wrap, row, none, none, none);
+// }
+#contentItemCarrouselHombres{
     width: 1263px;
     height: 400px;
     overflow: hidden;
-    .item-carrousel{
+    .item-carrousel-hombres{
         height: 100%;
         position: relative;
-        .card-carrousel{
+        .card-carrousel-hombres{
             height: 100%;
             @include flex(flex, wrap, row, space-evenly, center, none);
-            .card-container{
+            .card-container-hombres{
                 width: 210px;
                 height: 395px;
                 padding: 3px 3px;
@@ -34,6 +34,14 @@ h1{
                             transition: transform 100ms 0.2s;
                             a{
                                 text-decoration: none;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: flex-end;
+                                font-size: 20px;
+                                font-weight: 200;
+                                text-decoration: none;
+                                color: $color-black;
                             }
                         }
                     }
@@ -42,7 +50,7 @@ h1{
         }
     }
 }
-.flechas-carrousel{
+.flechas-carrousel-hombres{
     height: 100%;
     width: 100%;
     position: absolute;

@@ -670,10 +670,10 @@ productos.forEach((producto) => {
                                 <p>${producto.name}</p>
                                 <p>${producto.category}</p>
                                 <p>${producto.price}</p>
-                                <button><a href="./pages/hombres.html">comprame</a></button>
+                                
+                                <button><a href="./pages/hombres.html">Agregar</a></button>
                             </div> 
                             `
-
                         section.appendChild(cardsProductos);
                         });
 

@@ -3,22 +3,54 @@ h1{
     text-align: center;
     padding: 5px;
 }
-.carrousel-container{
-    @include flex(flex, wrap, row, none, none, none);
-}
-#contentitemcarrousel{
+// .carrousel-container{
+//     @include flex(flex, wrap, row, none, none, none);
+// }
+#contentItemCarrouselZapatillas{
     width: 1263px;
     height: 400px;
-    overflow: hidden; 
+    overflow: hidden;
+    .item-carrousel-zapatillas{
+        height: 100%;
+        position: relative;
+        .card-carrousel-zapatillas{
+            height: 100%;
+            @include flex(flex, wrap, row, space-evenly, center, none);
+            .card-container-zapatillas{
+                width: 210px;
+                height: 395px;
+                padding: 3px 3px;
+                border: 1px solid $color-black;
+                img{
+                    width: 200px;
+                    height: 300px;
+                    border-radius: 3px; 
+                    p{
+                        font-size: 22px;
+                        font-weight: 200;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        &:hover{
+                            transform: scale(1.1,1.1);
+                            transition: transform 100ms 0.2s;
+                            a{
+                                text-decoration: none;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: flex-end;
+                                font-size: 20px;
+                                font-weight: 200;
+                                text-decoration: none;
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-.item-carrousel{
-    height: 100%;
-    position: relative;
-}
-.card-carrousel{
-    height: 100%;
-}
-.flechas-carrousel{
+.flechas-carrousel-zapatillas{
     height: 100%;
     width: 100%;
     position: absolute;
@@ -26,56 +58,11 @@ h1{
     @include flex(flex, none, none, space-between, center, none);
     padding: 20px;
 }
-#card-carrousel-19{
-    @include flex(flex, wrap, row, space-evenly, center, none);
-}
-#card-carrousel-20{
-    @extend #card-carrousel-19;
-}
-#card-carrousel-21{
-    @extend #card-carrousel-19;
-}
-#card-carrousel-22{
-    @extend #card-carrousel-19;
-}
-#card-carrousel-23{
-    @extend #card-carrousel-19;
-}
-#card-carrousel-24{
-    @extend #card-carrousel-19;
-}
-#card-carrousel-25{
-    @extend #card-carrousel-19;
-}
-#card-carrousel-26{
-    @extend #card-carrousel-19;
-}
-#card-carrousel-27{
-    @extend #card-carrousel-19;
-}
-a{
-    text-decoration: none;
-}
+
 i{
     color: $color-black;
     img{
         width: 15px;
         height: 15px;
     }
-}
-.card-container{
-    width: 210px;
-    height: 377px;
-    padding: 3px 3px;
-    border: 1px solid $color-black;
-}
-.card-container img{
-    width: 200px;
-    height: 300px;
-    border-radius: 3px;  
-}
-.card-container p{
-    font-size: 22px;
-    font-weight: 200;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }

@@ -132,12 +132,12 @@
     padding: 3px 3px;
   }
 }
-.cards-container{
+.cards-container-index{
   width: 1263px;
   height: 400px;
   @include flex(flex, wrap, row, space-around, center, none);
 }
-.card-container{
+.card-container-index{
   width: 210px;
   height: 400px;
   padding: 3px 3px;

@@ -133,14 +133,18 @@
       padding: 3px 3px;
     }
   }
-  #contenedorProductos{
+  .contenedor-productos{
       width: 1263px;
       height: 500px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
   }
   .cards-container{
     width: 1263px;
     height: 500px;
-    @include flex(flex, none, column, space-between, none, none);
+    @include flex(flex, wrap, row, space-between, center, none);
   }
   .card-container{
     width: 210px;
