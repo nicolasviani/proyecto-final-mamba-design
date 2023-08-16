@@ -670,12 +670,14 @@ const mostrarProductos = (productos) =>{
                                     <img class="producto-imagen" src="${producto.image}" alt="${producto.name}">
                                         <div class="producto-detalle">
                                             <h3 class="producto-titulo"> ${producto.name}</h3>
+                                            <p class="producto-precio">${producto.category}</p>
                                             <p class="producto-precio">${producto.price}</p>
                                             <button id="${producto.zise}" class="agregar">Talles</button>
                                             <button id="${producto.id}" class="agregar">Agregar</button>
                                         </div>
                                     `
         contenedorProductos.appendChild(cardProductos);
+        console.log(contenedorProductos);
     });
     const agregarProducto = document.querySelectorAll(".agregar");
     agregarProducto.forEach((element) =>{

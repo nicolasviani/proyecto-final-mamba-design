@@ -7,14 +7,32 @@ main{
 }
 
 .titulo-principal{
-  color: $color-lightblue;
-  margin-bottom: 2rem;
+  color: $color-black;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  height: 80px;
 }
 
 #contenedorProductos{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+}
+
+#producto{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  border: 1px solid $color-black;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 0.25em $color-gray;
+  width: 80%;
 }
 
 .producto-imagen{
@@ -25,7 +43,8 @@ main{
 }
 
 .producto-detalle{
-  background-color: $color-lightblue;
+  width: 100%;
+  background-color: $color-black;
   color: $color-white;
   padding: .5rem;
   border-radius: 1rem;
@@ -44,7 +63,7 @@ main{
 .agregar{
   border: 0;
   background-color: $color-white;
-  color: $color-lightblue;
+  color: $color-black;
   padding: .4rem;
   text-transform: uppercase;
   border-radius: 2rem;
@@ -54,6 +73,6 @@ main{
 }
 
 .agregar:hover{
-  background-color: $color-lightblue;
+  background-color: $color-black;
   color: $color-white;
 }
