@@ -18,7 +18,7 @@ h1{
             @include flex(flex, wrap, row, space-evenly, center, none);
             .card-container{
                 width: 210px;
-                height: 377px;
+                height: 395px;
                 padding: 3px 3px;
                 border: 1px solid $color-black;
                 img{
@@ -32,6 +32,9 @@ h1{
                         &:hover{
                             transform: scale(1.1,1.1);
                             transition: transform 100ms 0.2s;
+                            a{
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
@@ -47,9 +50,7 @@ h1{
     @include flex(flex, none, none, space-between, center, none);
     padding: 20px;
 }
-a{
-    text-decoration: none;
-}
+
 i{
     color: $color-black;
     img{

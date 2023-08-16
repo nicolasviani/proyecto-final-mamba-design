@@ -1,11 +1,3 @@
-#contenedorGeneral {
-  background-color: $color-white;
-  border-bottom: 3px solid $color-black;
-  width: 100%;
-  height: 95px;
-  @include flex(flex, none, row, none, none, none);
-  padding: 5px;
-}
 .header-container {
   background-color: $color-white;
   border-bottom: 3px solid $color-black;
@@ -44,6 +36,12 @@
           &:hover {
           text-decoration: underline $color-black 3px;
           padding-top: 5px;
+          i{
+            color:$color-black;
+            width: 10px;
+            height: 10px;
+            font-weight: 100;
+          }
         }
       }
     }
@@ -141,7 +139,7 @@
 }
 .card-container{
   width: 210px;
-  height: 377px;
+  height: 400px;
   padding: 3px 3px;
   border: 1px solid $color-black;
   img{
@@ -155,6 +153,12 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 200;
     text-decoration: none;
     color: $color-black;
   }
