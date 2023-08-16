@@ -1,5 +1,3 @@
-const section = document.querySelector("#contenedorProductos");
-
 const productos =[
     {
         id: 1,
@@ -661,33 +659,33 @@ const productos =[
     
 ];
 
-productos.forEach((producto) => {
-    const cardsProductos = document.createElement("div");
-    cardsProductos.setAttribute("class", "cards-container");
-    cardsProductos.innerHTML =` 
-                            <div class="card-container">
-                                <img src="${producto.image}" alt="${producto.name}">
-                                <p>${producto.name}</p>
-                                <p>${producto.category}</p>
-                                <p>${producto.price}</p>
-                                
-                                <button><a href="./pages/hombres.html">Agregar</a></button>
-                            </div> 
-                            `
-                        section.appendChild(cardsProductos);
-                        });
+const contenedorProductos = document.querySelector("#contenedorProductos");
+console.log(productos);
 
+const mostrarProductos = (productos) =>{
+    productos.forEach(producto => {
+        const cardProductos = document.createElement("section");
+        cardProductos.setAttribute("id", "producto");
+        cardProductos.innerHTML = `
+                                    <img class="producto-imagen" src="${producto.image}" alt="${producto.name}">
+                                        <div class="producto-detalle">
+                                            <h3 class="producto-titulo"> ${producto.name}</h3>
+                                            <p class="producto-precio">${producto.price}</p>
+                                            <button id="${producto.zise}" class="agregar">Talles</button>
+                                            <button id="${producto.id}" class="agregar">Agregar</button>
+                                        </div>
+                                    `
+        contenedorProductos.appendChild(cardProductos);
+    });
+    const agregarProducto = document.querySelectorAll(".agregar");
+    agregarProducto.forEach((element) =>{
+        element.addEventListener("click", (event) =>{
+            agregarCarrito(event.target.id);
+        });
+    });
+};
+mostrarProductos(productos);
 
-
-
-/* <section>
-            <div class="cards-container">
-                <div class="card-container">
-                    <img src="./assets/images/hombres-main-inicio/buzo-smile.jpg" alt="buzo smile">
-                    <p>Buzo smile</p>
-                    <p>$25000</p>
-                    <button><a href="./pages/hombres.html">comprame</a></button>
-                </div> */
 
 
 

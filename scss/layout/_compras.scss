@@ -1,174 +1,59 @@
+main{
+  background-color: $color-white;
+  margin: 1rem;
+  margin-left: 0;
+  border-radius: 2rem;
+  padding: 3rem;
+}
 
-.header-container {
-    background-color: $color-white;
-    border-bottom: 3px solid $color-black;
-    width: 100%;
-    height: 95px;
-    @include flex(flex, none, row, none, none, none);
-    padding: 5px;
-  }
-  .logo-container {
-    width: 280px;
-    height: 85px;
-    @include flex(flex, wrap, row, center, center, none);
-    img {
-      border: 5px solid $color-black;
-      border-radius: 50%;
-      width: 100px;
-      height: 85px;
-    }
-  }
-  .nav-bottom-container{
-    width: 400px;
-    height: 85px;
-  }
-  .navbar-bottom-container {
-    ul {
-      @include flex(flex, wrap, row, flex-start, center, none);
-      height: 85px;
-      li {
-        list-style: none;
-          a {
-            text-decoration: none;
-            color: $color-black;
-            padding: 5px;
-            font-size: 20px;
-            font-weight: 200;
-            &:hover {
-            text-decoration: underline $color-black 3px;
-            padding-top: 5px;
-            i{
-              color:$color-black;
-              width: 10px;
-              height: 10px;
-              font-weight: 100;
-            }
-          }
-        }
-      }
-    }
-  }
-  .nav-auxiliary-container{
-    width: 600px;
-    height: 85px;
-    @include flex(flex, wrap, row, none, none, none);
-  }
-  .navbar-top-container {
-    ul {
-      @include flex(flex, wrap, row, flex-end, flex-start, none);
-      height: 85px;
-      li {
-        list-style: none;
-          a {
-            text-decoration: none;
-            color: $color-black;
-            padding: 10px;
-            font-size: 12px;
-            font-weight: 100;
-            &:hover {
-            text-decoration: underline $color-black 3px;
-            padding-top: 5px;
-          }
-        }
-      }
-    }
-  }
-  .auxiliary-menu{
-    @include flex(flex, wrap, row, flex-end, center, center);
-  }
-  .input-container{
-    width: 193px;
-    height: 32px;
-    border: 2px solid $color-black;
-    border-radius: 3PX;
-    background-color: $color-lightgray;
-    font-weight: 400 solid $color-black;
-    @include flex(flex, wrap, row, none, none, none);
-    padding: 3px;
-  }
-  .icon-container img{
-    width: 24px;
-  }
-  .parrafo-container{
-    background-color: $color-blue;
-    color: $color-white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    @include font(100%, 80px, 25px, 200, none, none, none, none, none, none, none, none, 20px, none, none, none);
-  }
-  .photo-container{
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    img{
-      width: 100%;
-      height: 400px;
-    }
-    p{
-      font-size: 45px;
-      font-weight: 400;
-      color: $color-white;
-      position: absolute;
-      top: 70%;
-      right: 5%;
-      transform: translate(-50% -50%);
-    }
-  }
-  .title-container{
-    @include flex(flex, wrap, row, center, center, none);
-    h3{
-      font-size: 25px;
-      font-weight: 400;
-      font-family: 'Roboto', sans-serif;
-      margin: 15px;
-      text-align: center;
-      text-decoration: none;
-      color: $color-black;
-    }
-    a:hover{
-      background-color: $color-black;
-      color: $color-whitesmoke;
-      border-radius: 5px;
-      padding: 3px 3px;
-    }
-  }
-  .contenedor-productos{
-      width: 1263px;
-      height: 500px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-  .cards-container{
-    width: 1263px;
-    height: 500px;
-    @include flex(flex, wrap, row, space-between, center, none);
-  }
-  .card-container{
-    width: 210px;
-    height: 480px;
-    padding: 3px 3px;
-    border: 1px solid $color-black;
-    img{
-      width: 200px;
-      height: 300px;
-      border-radius: 3px;  
-    }
-    p{
-      font-size: 17px;
-      font-weight: 200;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    a{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      font-size: 20px;
-      font-weight: 200;
-      text-decoration: none;
-      color: $color-black;
-    }
-  }
+.titulo-principal{
+  color: $color-lightblue;
+  margin-bottom: 2rem;
+}
+
+#contenedorProductos{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.producto-imagen{
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.producto-detalle{
+  background-color: $color-lightblue;
+  color: $color-white;
+  padding: .5rem;
+  border-radius: 1rem;
+  margin-top: -2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.producto-titulo{
+  font-size: 1rem;
+
+}
+
+.agregar{
+  border: 0;
+  background-color: $color-white;
+  color: $color-lightblue;
+  padding: .4rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid $color-white;
+  transition: background-color .2s color .2s;
+}
+
+.agregar:hover{
+  background-color: $color-lightblue;
+  color: $color-white;
+}
