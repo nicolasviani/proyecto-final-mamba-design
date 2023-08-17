@@ -693,18 +693,11 @@ function mostrarTalles ()
         title: 'Select field validation',
         input: 'select',
         inputOptions: {
-            'Fruits': {
-                apples: 'Apples',
-                bananas: 'Bananas',
-                grapes: 'Grapes',
-                oranges: 'Oranges'
-            },
-            'Vegetables': {
-                potato: 'Potato',
-                broccoli: 'Broccoli',
-                carrot: 'Carrot'
-            },
-            'icecream': 'Ice cream'
+            'talles': {
+                S: 'S',
+                M: 'M',
+                L: 'L',
+                XL: 'XL'
             },
             inputPlaceholder: 'Select a fruit',
             showCancelButton: true,
@@ -717,10 +710,12 @@ function mostrarTalles ()
                 }
                 });
             }
-        });
+        }
+        })
+        
         if (fruit) {
         Swal.fire(`You selected: ${fruit}`)
-        };
+        }
         mostrarProductos(productos);
 
 
