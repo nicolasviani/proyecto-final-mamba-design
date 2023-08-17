@@ -660,7 +660,6 @@ const productos =[
 ];
 
 const contenedorProductos = document.querySelector("#contenedorProductos");
-console.log(productos);
 
 const mostrarProductos = (productos) =>{
     productos.forEach(producto => {
@@ -672,20 +671,64 @@ const mostrarProductos = (productos) =>{
                                             <h3 class="producto-titulo"> ${producto.name}</h3>
                                             <p class="producto-precio">${producto.category}</p>
                                             <p class="producto-precio">${producto.price}</p>
-                                            <button id="${producto.zise}" class="agregar">Talles</button>
-                                            <button id="${producto.id}" class="agregar">Agregar</button>
+                                            <button id="talles_${producto.id}" class="agregar">Talles</button>
+                                            <button id="agregar_${producto.id}" class="agregar">Agregar</button>
                                         </div>
                                     `
         contenedorProductos.appendChild(cardProductos);
-        console.log(contenedorProductos);
-    });
-    const agregarProducto = document.querySelectorAll(".agregar");
-    agregarProducto.forEach((element) =>{
-        element.addEventListener("click", (event) =>{
-            agregarCarrito(event.target.id);
-        });
     });
 };
+
+const botonTalles = document.querySelector("#talles_${producto.size}");
+botonTalles.addEventListener("click", () => {
+    const opcionesTalles = productos.id.map(size => `<option>${size}</option>`).join(" ");
+    Swal.fire({
+        title: 'Seleccione un talle',
+        html: `<select id="talleSelect">${talleOptions}</select>`,
+        showCancelButton: true,
+        confirmButtonText: 'Agregar al carrito',
+        cancelButtonText: 'Cancelar',
+        preConfirm: () => {
+            return document.querySelector('#talleSelect').value;
+        }
+    }).then(result => {
+        if (result.isConfirmed) {
+            const selectedTalle = result.value;
+            console.log(`Selected talle: ${selectedTalle}`);
+        };
+    });
+});
+
+const agregarButton = document.querySelector(`#agregar_${producto.id}`);
+        agregarButton.addEventListener("click", () => {
+
+        });
+
+        mostrarProductos(productos);
+
+//     const agregarProducto = document.querySelectorAll(".agregar");
+//     agregarProducto.forEach((elemento) =>{
+//         elemento.addEventListener("click", (event) =>{
+//             const productoId = event.target.id.split("_")[1];
+//             if(event.target.id.include("talles")) {
+//                 mostrarTalles(productos.find(producto => producto.id === productoId));
+//             }else{
+//                 const talleSeleccionado = obtenerTalleSelecionado(productoId);
+//                 agregarAlCarrito(productoId, talleSeleccionado);
+//             }
+//         });
+//     });
+// };
+
+// const mostrarTalles = (producto) =>{
+//     const opcionesTalles = producto.size.join(", ");
+//     Swal.fire({
+//         title: 'Talles disponibles:',
+//         text: opcionesTalles,
+//         icon: 'info',
+//     });
+// };
+
 mostrarProductos(productos);
 
 
