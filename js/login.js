@@ -5,7 +5,7 @@ const section = document.createElement("section");
 section.classList.add("main-container");
 section.innerHTML = `
                 <form id="form" class="form">
-                    <h2 class="form-titulo">Inicia sesion</h2>
+                    <h2 class="form-titulo">Iniciar sesion</h2>
                     <p class="form-subtitulo">¿Aun no tenes una cuenta?</p>
                     <div class="form-container">
                         <div class="form-grupo">
@@ -64,12 +64,12 @@ const bienvenidaUndefined = () => {
 botonIniciarSesion.addEventListener("click",() =>{
     const usuarios = usuariosRegistrados.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
     if(usuarios !== undefined){
-        bienvenida(usuarios.nombre);
-        localStorage.setItem("usuario",JSON.stringify(usuarios));
-        console.log(usuarios);
+        setTimeout((bienvenida)=>{
+            bienvenida(usuarios.nombre);
+        },1000);
+            localStorage.setItem("usuario",JSON.stringify(usuarios));
     }else{
         bienvenidaUndefined();
-        console.log(usuarios);
     }
 });
 
