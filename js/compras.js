@@ -673,50 +673,43 @@ const mostrarProductos = (productos) =>{
                                             <p class="producto-precio">${producto.price}</p>
                                             <button id="talles_${producto.id}" class="agregar-talles">Talles</button>
                                             <button id="agregar_${producto.id}" class="agregar-carrito">Agregar</button>
-                                            
+                                            <div id="tallesDiv_${producto.id}" class="talles-div"></div>
                                         </div>
                                     `
         contenedorProductos.appendChild(cardProductos);
 
-        const botonTalles = document.querySelector((`#talles_${producto.id}`));
-        botonTalles.addEventListener("click", mostrarTalles);
+        const botonTalles = document.querySelector(`#talles_${producto.id}`);
+        const tallesDiv = document.querySelector(`#tallesDiv_${producto.id}`);
+        const botonAgregar = document.querySelector(`#agregar_${producto.id}`);
 
-        const agregarButton = document.querySelector(`#agregar_${producto.id}`);
-        agregarButton.addEventListener("click", agregarACarrito);
+        botonTalles.addEventListener("click", () =>{
+            tallesDiv.innerHTML = "";
 
+            producto.size.forEach(talle => {
+                const radioLabel = document.createElement("label");
+                radioLabel.innerHTML = `
+                <input type ="radio" name="talle_${producto.id}" value ="${talle}">
+                ${talle}
+                `;
+                tallesDiv.appendChild(radioLabel);
+            });
+        });
+        botonAgregar.addEventListener("click", () => {
+            const seleccionTalles = tallesDiv.querySelector('input:checked');
+
+            if(seleccionTalles){
+                const talleElegido = seleccionTalles.value;
+                const productoConTalle = {
+                    ...producto,
+                    talle: talleElegido
+                };
+                console.log(productoConTalle);
+            }
+        });
     });
 };
 
-function mostrarTalles ()
-    let menuTalles = productos.map(size => `<option>${size}</option>`).join(" ");
-    const { value: mostrarTalles } = await Swal.fire({
-        title: 'Select field validation',
-        input: 'select',
-        inputOptions: {
-            'talles': {
-                S: 'S',
-                M: 'M',
-                L: 'L',
-                XL: 'XL'
-            },
-            inputPlaceholder: 'Select a fruit',
-            showCancelButton: true,
-            inputValidator: (value) => {
-                return new Promise((resolve) => {
-                if (value === 'oranges') {
-                resolve()
-                } else {
-                resolve('You need to select oranges :)')
-                }
-                });
-            }
-        }
-        })
-        
-        if (fruit) {
-        Swal.fire(`You selected: ${fruit}`)
-        }
-        mostrarProductos(productos);
+mostrarProductos(productos);
 
 
 

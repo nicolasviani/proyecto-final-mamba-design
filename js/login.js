@@ -9,20 +9,19 @@ section.innerHTML = `
                     <p class="form-subtitulo">¿Aun no tenes una cuenta?</p>
                     <div class="form-container">
                         <div class="form-grupo">
-                            <input type="text" name="nombre" class="form-input" placeholder="Nombre">
-                            <label for="name" class="form-label-1"></label>
+                            <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Nombre">
+                            <label for="nombre" class="form-label"></label>
                             <span class="form-linea"></span>
                         </div>
                         <div class="form-grupo">
-                            <input type="email" name="email" class="form-input" placeholder="E-mail">
-                            <label for="user" class="form-label-1"></label>
+                            <input type="text" id="email" name="email" class="form-input" placeholder="E-mail">
+                            <label for="email" class="form-label"></label>
                             <span class="form-line"></span>
                         </div>
                         <div class="form-grupo">
-                            <input type="text"  name="contraseña" class="form-input" placeholder="Contraseña">
-                            <label for="password" class="form-label-1"></label>
+                            <input type="text" id="contraseña" name="contraseña" class="form-input" placeholder="Contraseña">
+                            <label for="contraseña" class="form-label"></label>
                             <span class="form-line"></span>
-
                         <div class="form-container">
                             <button id="enviar" class="boton"> Iniciar sesion </button>
                         </div>
@@ -39,6 +38,7 @@ const user = {
 };
 
 const usuariosRegistrados = JSON.parse(localStorage.getItem("usuariosRegistrados")) || baseDeDatos;
+console.log(usuariosRegistrados);
 
 if(!localStorage.getItem("usuariosRegistrados")){
     localStorage.setItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
@@ -47,6 +47,7 @@ if(!localStorage.getItem("usuariosRegistrados")){
 const form = document.querySelector("#form");
 const inputs = document.querySelectorAll("input");
 const botonIniciarSesion = document.querySelector("#enviar");
+
 
 const bienvenida = nombre =>{
     form.innerHTML = `<h3 class="form-titulo"> Bienvenido ${nombre} a Mamba Desing... </h3> `
@@ -62,11 +63,13 @@ const bienvenidaUndefined = () => {
 
 botonIniciarSesion.addEventListener("click",() =>{
     const usuarios = usuariosRegistrados.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
-    if(usuarios != undefined){
+    if(usuarios !== undefined){
         bienvenida(usuarios.nombre);
         localStorage.setItem("usuario",JSON.stringify(usuarios));
+        console.log(usuarios);
     }else{
         bienvenidaUndefined();
+        console.log(usuarios);
     }
 });
 
@@ -75,3 +78,4 @@ inputs.forEach((elemento) =>{
         user[event.target.name] = event.target.value;
     });
 });
+

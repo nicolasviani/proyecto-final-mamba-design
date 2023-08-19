@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mamba Design diseña ropa deportiva y urbana para personas de todo tipo. Creadores que disfrutan de cambiar las reglas del juego. Desafiar las convenciones. Romper las normas y definir nuevas. Y volverlas a romper. ">
+    <meta name="keywords" content="ropa deportiva, ropa urbana, ropa, zapatillas, buzos, remeras, pantalones, medias, boxer, conjuntos deportivos, mujeres, hombres">
+    <meta name="author" content="Nicolas Viani">
+    <meta name="copyright" content="Mamba Design">
+    <meta property="og: title" content="compras, Mamba Design">
+    <meta property="og: description" content="Mamba Design ropa deportiva y urbana para todos y todas.">
+    <meta property="og: image" content="">
+    <meta property="og: url" content="https://wwwmambadesingcom.netlify.app/pages/compras.html">
+    <title>Carrito | Mamba Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/logos/ropa-favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <img src="./assets/logos/logo-blanco-a.png" alt="">
+            </header>
+            <nav>
+                <ul>
+                    <li><a class="boton-menu boton-volver" href="../pages/compras.html"><i class="bi bi-arrow-return-left"></i>Seguir comprando</a></li>
+                    <li><a class="boton-menu boton-carrito active boton-menu " href="./carrito.html"><i class="bi bi-cart-fill"></i>Carrito</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 Mamba Design</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio">Tu carrito esta vacio<i class="bi bi-emoji-frown"></i></p>
+                
+                <div class="carrito-productos disabled">
+                    
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-imagen" src="./assets/images/buzos-camperas-hombres-html/buzo-nike.png" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>Titulo</small>
+                            <h3>Buzo Nike</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$25999</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$25999</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                </div>
+                <div class="carrito-productos disabled">
+                    
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-imagen" src="./assets/images/buzos-camperas-mujeres-html/buzo-hugo.png" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>Titulo</small>
+                            <h3>Buzo Hugo Boss</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$29999</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$55998</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                </div>
+
+                <div class="carrito-acciones disabled">
+                    
+                    <div class="carrito-acciones-izquierda">
+                        <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+
+                    <div class="carrito-acciones-derecha">
+
+                        <div class="carrito-acciones-total">
+                            <p>Total</p>
+                            <p id="total">$55998</p>
+                        </div>
+
+                        <button class="carrito-acciones-comprar">Comprar ahora</button>
+
+                    </div>
+                </div>
+                <p class="carrito-comprado disabled">Muchas gracias por tu compra...<i class="bi bi-emoji-smile"></i></p>
+
+            </div>
+        </main>
+    </div>
+
+
+<script src="./js/carrito.js"></script>
+</body>
+</html>

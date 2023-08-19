@@ -1,12 +1,11 @@
-main{
+.main{
   background-color: $color-white;
   margin: 1rem;
-  margin-left: 0;
   border-radius: 2rem;
   padding: 3rem;
 }
 
-.titulo-principal{
+.titulo-principal-compras{
   color: $color-black;
   margin-bottom: 1rem;
   display: flex;
@@ -15,9 +14,92 @@ main{
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  height: 80px;
+  height: 60px;
+}
+nav{
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.menu-li{
+  list-style: none;
+}
+.menu-li a{
+  text-decoration: none;
 }
 
+.boton-menu{
+  background-color: $color-black;
+  border: 0;
+  color:  $color-white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  font-size: .85rem;
+}
+
+.boton-menu.active{
+  background-color: $color-white;
+  color: $color-black;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  position: relative;
+}
+
+.boton-menu.active::before{
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  bottom: 100%;
+  right: 0;
+  border-bottom-right-radius: .5rem;
+  box-shadow: 0 1rem 0 $color-white;
+}
+
+.boton-menu.active::after{
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  top: 100%;
+  right: 0;
+  border-top-right-radius: .5rem;
+  box-shadow: 0 -1rem 0 $color-white;
+}
+
+.bi-hand-index-thumb-fill,
+.bi-hand-index-thumb{
+  transform: rotateZ(90deg);
+}
+
+.boton-carrito{
+  margin-top: 2rem;
+}
+.numerito{
+  background-color: $color-white;
+  color: $color-black;
+  padding: 0 .25rem;
+  border-radius: .25rem;
+}
+
+.boton-carrito.active .numerito{
+  background-color: $color-black;
+  color: $color-white;
+}
 #contenedorProductos{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
