@@ -659,6 +659,8 @@ const productos =[
     
 ];
 
+const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
 const contenedorProductos = document.querySelector("#contenedorProductos");
 
 const mostrarProductos = (productos) =>{
@@ -680,7 +682,7 @@ const mostrarProductos = (productos) =>{
 
         const botonTalles = document.querySelector(`#talles_${producto.id}`);
         const tallesDiv = document.querySelector(`#tallesDiv_${producto.id}`);
-        const botonAgregar = document.querySelector(`#agregar_${producto.id}`);
+        const botonAgregar = document.querySelectorAll(`#agregar_${producto.id}`);
 
         botonTalles.addEventListener("click", () =>{
             tallesDiv.innerHTML = "";
@@ -703,11 +705,16 @@ const mostrarProductos = (productos) =>{
                     ...producto,
                     talle: talleElegido
                 };
-                console.log(productoConTalle);
+                
+                carrito.push(productoConTalle);
+                localStorage.setItem("carrito", JSON.stringify(carrito));
             }
         });
     });
 };
+
+
+
 
 mostrarProductos(productos);
 

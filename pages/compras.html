@@ -50,19 +50,19 @@
         </div>
     </header>
     <main class="main">
-        <section>
-            <div class="titulo-principal-compras">
-                <h3>Todos los productos</h3>
+        <div class="titulo-principal-compras">
+            <h3>Todos los productos</h3>
+        </div>
+        <section class="contenedor-titulo-carrito">
+            <div class="contenedor-carrito">
+                <a id="botonCarrito" class="boton-menu boton-carrito active" href="./carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span class="numerito">0</span></a>
+                <!-- <div class="modal-contenedor" id="modalCntenedor">
+                    <div class="modal">
+                        <small>Detalle de tu compra</small>
+                        <p>Tu carrito esta vacio</p>
+                    </div>
+                </div> -->
             </div>
-            <nav>
-                <ul class="menu">
-                    <li class="menu-li">
-                        <a id="botonCarrito" class="boton-menu boton-carrito active" href="./carrito.html">
-                            <i class="bi bi-cart-fill"></i>Carrito<span class="numerito">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </section>
         <div id="contenedorProductos" class="container-products"></div>
     </main>

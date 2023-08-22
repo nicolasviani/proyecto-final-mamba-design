@@ -61,12 +61,11 @@ const bienvenidaUndefined = () => {
                         `
 };
 
-botonIniciarSesion.addEventListener("click",() =>{
+botonIniciarSesion.addEventListener("submit",(event) =>{
+    event.preventDefault()
     const usuarios = usuariosRegistrados.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
     if(usuarios !== undefined){
-        setTimeout((bienvenida)=>{
             bienvenida(usuarios.nombre);
-        },1000);
             localStorage.setItem("usuario",JSON.stringify(usuarios));
     }else{
         bienvenidaUndefined();

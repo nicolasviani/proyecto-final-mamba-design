@@ -1,10 +1,15 @@
 .main{
   background-color: $color-white;
-  margin: 1rem;
-  border-radius: 2rem;
-  padding: 3rem;
+  margin-left: 5px;
 }
-
+.contenedor-titulo-carrito{
+  width: 810px;
+  height: 120px;
+  margin-left: 5px;
+}
+a {
+  text-decoration: none;
+}
 .titulo-principal-compras{
   color: $color-black;
   margin-bottom: 1rem;
@@ -12,29 +17,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
+  align-items: flex-end;
+  font-size: 1.5rem;
   height: 60px;
 }
-nav{
-  height: 110px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-.menu{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-.menu-li{
-  list-style: none;
-}
-.menu-li a{
-  text-decoration: none;
-}
+// .contenedor-carrito{
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+//   align-items: flex-end;
+//   width: 650px;
+// }
 
 .boton-menu{
   background-color: $color-black;
@@ -48,14 +41,15 @@ nav{
   font-weight: 600;
   padding: 1rem;
   font-size: .85rem;
+  width: 200px;
 }
 
 .boton-menu.active{
-  background-color: $color-white;
+  background-color: transparent;
   color: $color-black;
-  width: 100%;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  width: 200px;
+  max-width: 100%;
+  border-radius: 1rem;
   position: relative;
 }
 
@@ -66,7 +60,7 @@ nav{
   height: 2rem;
   bottom: 100%;
   right: 0;
-  border-bottom-right-radius: .5rem;
+  border-radius: .5rem;
   box-shadow: 0 1rem 0 $color-white;
 }
 
@@ -77,13 +71,37 @@ nav{
   height: 2rem;
   top: 100%;
   right: 0;
-  border-top-right-radius: .5rem;
+  border-radius: .5rem;
   box-shadow: 0 -1rem 0 $color-white;
 }
 
 .bi-hand-index-thumb-fill,
 .bi-hand-index-thumb{
   transform: rotateZ(90deg);
+}
+
+.modal-contenedor{
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  pointer-events: none;
+  top: 0;
+  left: 30px;
+  height: 150px;
+  width: 790px;
+}
+
+.modal{
+  background-color: $color-gray;
+  width: 650px;
+  height: 150px;
+  max-width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .boton-carrito{
@@ -103,6 +121,7 @@ nav{
 #contenedorProductos{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   gap: 1rem;
 }
 
@@ -114,7 +133,7 @@ nav{
   border: 1px solid $color-black;
   border-radius: 1rem;
   box-shadow: 0 0 0 0.25em $color-gray;
-  width: 80%;
+  width: 70%;
 }
 
 .producto-imagen{
