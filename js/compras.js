@@ -6,7 +6,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$17999",
         size: ["S", "M", "L", "XL"],
-        quantity: 1,
+        
     },
     {
         id: 2,
@@ -682,11 +682,10 @@ const mostrarProductos = (productos) =>{
 
         const botonTalles = document.querySelector(`#talles_${producto.id}`);
         const tallesDiv = document.querySelector(`#tallesDiv_${producto.id}`);
-        const botonAgregar = document.querySelectorAll(`#agregar_${producto.id}`);
+        const botonAgregar = document.querySelector(`#agregar_${producto.id}`);
 
         botonTalles.addEventListener("click", () =>{
             tallesDiv.innerHTML = "";
-
             producto.size.forEach(talle => {
                 const radioLabel = document.createElement("label");
                 radioLabel.innerHTML = `
@@ -696,9 +695,10 @@ const mostrarProductos = (productos) =>{
                 tallesDiv.appendChild(radioLabel);
             });
         });
+        
         botonAgregar.addEventListener("click", () => {
             const seleccionTalles = tallesDiv.querySelector('input:checked');
-
+            
             if(seleccionTalles){
                 const talleElegido = seleccionTalles.value;
                 const productoConTalle = {
@@ -706,15 +706,15 @@ const mostrarProductos = (productos) =>{
                     talle: talleElegido
                 };
                 
+                console.log(carrito.some(producto => producto.id === botonAgregar));
+
                 carrito.push(productoConTalle);
                 localStorage.setItem("carrito", JSON.stringify(carrito));
+                console.log(carrito)
             }
         });
     });
 };
-
-
-
 
 mostrarProductos(productos);
 
