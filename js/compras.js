@@ -661,19 +661,21 @@ const productos =[
 
 const div = document.querySelector(".contenedor-carrito");
 const a = document.createElement("a");
-a.setAttribute("id", "botonCarrito");
+a.setAttribute("class", "active");
 a.innerHTML = `
-            <a href="./carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span class="numerito">0</span></a>
+            <a id="botonCarrito" class="boton-menu boton-carrito active" href="./carrito.html">
+            <i class="bi bi-cart-fill"></i>Carrito<span class="numerito">0</span>
+            </a>
             `
-            
-            a.classList.remove("active");
-            a.classList.add("active");
-            
-            const i = document.createElement("i");
-            i.classList.add("numerito");
+const numeroCarrito = document.createElement("span");
+    
+    numeroCarrito.addEventListener("click", () =>{
+    numeroCarrito.classList.add("numerito");
+div.appendChild(a);
+console.log(div);
+        
+});
 
-            div.appendChild(a);
-            console.log(div);
 
 
 
