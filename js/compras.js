@@ -671,11 +671,11 @@ const numeroCarrito = document.createElement("span");
     
     numeroCarrito.addEventListener("click", () =>{
     numeroCarrito.classList.add("numerito");
-div.appendChild(a);
-console.log(div);
-        
+    
 });
 
+div.appendChild(a);
+console.log(div);
 
 
 
