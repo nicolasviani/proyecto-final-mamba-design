@@ -1070,9 +1070,6 @@ main {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem; }
 
-.disabled {
-  display: none; }
-
 @media (max-width: 768px) {
   .header-container {
     background-color: #fff;

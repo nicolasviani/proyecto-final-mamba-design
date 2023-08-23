@@ -6,7 +6,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$17999",
         size: ["S", "M", "L", "XL"],
-        
+        quantity: 1,
     },
     {
         id: 2,
@@ -659,6 +659,24 @@ const productos =[
     
 ];
 
+const div = document.querySelector(".contenedor-carrito");
+const a = document.createElement("a");
+a.setAttribute("id", "botonCarrito");
+a.innerHTML = `
+            <a href="./carrito.html"><i class="bi bi-cart-fill"></i>Carrito<span class="numerito">0</span></a>
+            `
+            
+            a.classList.remove("active");
+            a.classList.add("active");
+            
+            const i = document.createElement("i");
+            i.classList.add("numerito");
+
+            div.appendChild(a);
+            console.log(div);
+
+
+
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const contenedorProductos = document.querySelector("#contenedorProductos");
@@ -706,11 +724,12 @@ const mostrarProductos = (productos) =>{
                     talle: talleElegido
                 };
                 
-                console.log(carrito.some(producto => producto.id === botonAgregar));
-
                 carrito.push(productoConTalle);
                 localStorage.setItem("carrito", JSON.stringify(carrito));
-                console.log(carrito)
+                console.log(carrito);
+
+                console.log(carrito.some(producto => producto.id === botonAgregar));
+                console.log(botonAgregar);
             }
         });
     });
