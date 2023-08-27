@@ -801,21 +801,20 @@ a {
   font-size: 1.5rem;
   height: 60px; }
 
-.boton-menu {
-  background-color: #000;
+#botonCarrito {
+  background-color: transparent;
   border: 0;
-  color: #fff;
+  color: #000;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-weight: 600;
-  padding: 1rem;
   font-size: .85rem;
   width: 200px; }
 
-.boton-menu.active {
+#botonCarrito .active {
   background-color: transparent;
   color: #000;
   width: 200px;
@@ -823,7 +822,7 @@ a {
   border-radius: 1rem;
   position: relative; }
 
-.boton-menu.active::before {
+#botonCarrito .active::before {
   content: "";
   position: absolute;
   width: 1rem;
@@ -833,7 +832,7 @@ a {
   border-radius: .5rem;
   box-shadow: 0 1rem 0 #fff; }
 
-.boton-menu.active::after {
+#botonCarrito .active::after {
   content: "";
   position: absolute;
   width: 1rem;
@@ -847,29 +846,7 @@ a {
 .bi-hand-index-thumb {
   transform: rotateZ(90deg); }
 
-.modal-contenedor {
-  display: flex;
-  background-color: transparent;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  pointer-events: none;
-  top: 0;
-  left: 30px;
-  height: 150px;
-  width: 790px; }
-
-.modal {
-  background-color: #706c6c;
-  width: 650px;
-  height: 150px;
-  max-width: 100%;
-  padding: 15px 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-align: center; }
-
-.boton-carrito {
+#botonCarrito {
   margin-top: 2rem; }
 
 .numerito {
@@ -1069,6 +1046,9 @@ main {
   cursor: pointer;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem; }
+
+.disabled {
+  display: none; }
 
 @media (max-width: 768px) {
   .header-container {

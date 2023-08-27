@@ -29,22 +29,21 @@ a {
 //   width: 650px;
 // }
 
-.boton-menu{
-  background-color: $color-black;
+#botonCarrito{
+  background-color: transparent;
   border: 0;
-  color:  $color-white;
+  color:  $color-black;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-weight: 600;
-  padding: 1rem;
   font-size: .85rem;
   width: 200px;
 }
 
-.boton-menu.active{
+#botonCarrito .active{
   background-color: transparent;
   color: $color-black;
   width: 200px;
@@ -53,7 +52,7 @@ a {
   position: relative;
 }
 
-.boton-menu.active::before{
+#botonCarrito .active::before{
   content: "";
   position: absolute;
   width: 1rem;
@@ -64,7 +63,7 @@ a {
   box-shadow: 0 1rem 0 $color-white;
 }
 
-.boton-menu.active::after{
+#botonCarrito .active::after{
   content: "";
   position: absolute;
   width: 1rem;
@@ -80,31 +79,8 @@ a {
   transform: rotateZ(90deg);
 }
 
-.modal-contenedor{
-  display: flex;
-  background-color: transparent;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  pointer-events: none;
-  top: 0;
-  left: 30px;
-  height: 150px;
-  width: 790px;
-}
 
-.modal{
-  background-color: $color-gray;
-  width: 650px;
-  height: 150px;
-  max-width: 100%;
-  padding: 15px 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.boton-carrito{
+#botonCarrito{
   margin-top: 2rem;
 }
 .numerito{
