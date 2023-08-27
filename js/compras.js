@@ -6,6 +6,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$17999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -15,6 +16,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$18999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -24,6 +26,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$18999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -33,6 +36,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$45999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -42,6 +46,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$16999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -51,6 +56,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$20999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -60,6 +66,7 @@ const productos =[
         category: "Buzos/camperas de hombres",
         price: "$26999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -69,6 +76,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$26999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -78,6 +86,7 @@ const productos =[
         category: "Buzo/camperas de hombres",
         price: "$27999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -87,6 +96,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "27999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -96,6 +106,7 @@ const productos =[
         category: "Remeras de hombres",
         price: "$32999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -105,6 +116,7 @@ const productos =[
         category: "Buzo/camperas de hombres",
         price: "$26999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -114,6 +126,7 @@ const productos =[
         category: "Buzo/camperas de hombres",
         price: "$25999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -123,6 +136,7 @@ const productos =[
         category: "Buzo/camperas de hombres",
         price: "$24999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -132,6 +146,7 @@ const productos =[
         category: "Buzo/camperas de hombres",
         price: "$25999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -141,6 +156,7 @@ const productos =[
         category: "Buzo/camperas de hombres",
         price: "$28999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -150,6 +166,7 @@ const productos =[
         category: "Buzo/camperas de hombres",
         price: "$23999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
 
     },
     {
@@ -159,6 +176,7 @@ const productos =[
         category: "Buzo/camperas de hombres",
         price: "$28999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 19,
@@ -167,6 +185,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$12999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 20,
@@ -175,6 +194,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$27999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 21,
@@ -183,6 +203,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$22999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 22,
@@ -191,6 +212,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$13999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 23,
@@ -199,6 +221,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$56999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 24,
@@ -207,6 +230,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$52999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 25,
@@ -215,6 +239,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$45999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 26,
@@ -223,6 +248,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$23999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 27,
@@ -231,6 +257,7 @@ const productos =[
         category: "Pantalones de hombres",
         price: "$24999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 28,
@@ -239,6 +266,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$32999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 29,
@@ -247,6 +275,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$34999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 30,
@@ -255,6 +284,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$40999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 31,
@@ -263,6 +293,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$43999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 32,
@@ -271,6 +302,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$23999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 33,
@@ -279,6 +311,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$43999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 34,
@@ -287,6 +320,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$42999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 35,
@@ -295,6 +329,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$42999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 36,
@@ -303,6 +338,7 @@ const productos =[
         category: "Zapatillas de hombres",
         price: "$26999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 37,
@@ -311,6 +347,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$32999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 38,
@@ -319,6 +356,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$35999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 39,
@@ -327,6 +365,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$38999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 40,
@@ -335,6 +374,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$26999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 41,
@@ -343,6 +383,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$28999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 42,
@@ -351,6 +392,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$32999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 43,
@@ -359,6 +401,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$36999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 44,
@@ -367,6 +410,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$32999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 45,
@@ -375,6 +419,7 @@ const productos =[
         category: "Zapatillas de mujeres",
         price: "$35999",
         size: [35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 46,
@@ -383,6 +428,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$16999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 47,
@@ -391,6 +437,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$27999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 48,
@@ -399,6 +446,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$25999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 49,
@@ -407,6 +455,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$46999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 50,
@@ -415,6 +464,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$35999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 51,
@@ -423,6 +473,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$26999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 52,
@@ -431,6 +482,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$13999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 53,
@@ -439,6 +491,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$13999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 54,
@@ -447,6 +500,7 @@ const productos =[
         category: "Pantalones de mujeres",
         price: "$16999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 55,
@@ -455,6 +509,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$23999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 56,
@@ -463,6 +518,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$23999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 57,
@@ -471,6 +527,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$28999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 58,
@@ -479,6 +536,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$28999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 59,
@@ -487,6 +545,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$26999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 60,
@@ -495,6 +554,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$26999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 61,
@@ -503,6 +563,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$26999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 62,
@@ -511,6 +572,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$26999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 63,
@@ -519,6 +581,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$27999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 64,
@@ -527,6 +590,7 @@ const productos =[
         category: "Buzos/camperas de mujeres",
         price: "$28999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 65,
@@ -535,6 +599,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$7999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 66,
@@ -543,6 +608,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$11999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 67,
@@ -551,6 +617,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$14999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 68,
@@ -559,6 +626,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$14999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 69,
@@ -567,6 +635,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$13999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 70,
@@ -575,6 +644,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$14999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 71,
@@ -583,6 +653,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$17999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 72,
@@ -591,6 +662,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$9999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     {
         id: 73,
@@ -599,6 +671,7 @@ const productos =[
         category: "Remeras de mujeres",
         price: "$17999",
         size: ["S", "M", "L", "XL"],
+        quantity:[1, 2, 3, 4, 5],
     },
     
 ];
@@ -622,8 +695,6 @@ function botonCarrito (){
     
 }
 
-
-
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const contenedorProductos = document.querySelector("#contenedorProductos");
@@ -639,14 +710,18 @@ const mostrarProductos = (productos) =>{
                                             <p class="producto-precio">${producto.category}</p>
                                             <p class="producto-precio">${producto.price}</p>
                                             <button id="talles_${producto.id}" class="agregar-talles">Talles</button>
+                                            <button id="cantidad_${producto.id}" class="agregar-cantidad">Cantidad</button>
                                             <button id="agregar_${producto.id}" class="agregar-carrito">Agregar</button>
                                             <div id="tallesDiv_${producto.id}" class="talles-div"></div>
+                                            <div id="cantidadDiv_${producto.id}" class="cantidad-div"></div>
                                         </div>
                                     `
         contenedorProductos.appendChild(cardProductos);
 
         const botonTalles = document.querySelector(`#talles_${producto.id}`);
         const tallesDiv = document.querySelector(`#tallesDiv_${producto.id}`);
+        const botonCantidad = document.querySelector(`#cantidad_${producto.id}`);
+        const cantidadDiv = document.querySelector(`#cantidadDiv_${producto.id}`);
         const botonAgregar = document.querySelector(`#agregar_${producto.id}`);
 
         botonTalles.addEventListener("click", () =>{
@@ -660,39 +735,40 @@ const mostrarProductos = (productos) =>{
                 tallesDiv.appendChild(radioLabel);
             });
         });
-        
+
+        botonCantidad.addEventListener("click", () =>{
+            cantidadDiv.innerHTML = "";
+            producto.quantity.forEach(cantidad => {
+                const radioLabel = document.createElement("label");
+                radioLabel.innerHTML = `
+                <input type ="radio" name="cantidad_${producto.id}" value ="${cantidad}">
+                ${cantidad}
+                `;
+                cantidadDiv.appendChild(radioLabel);
+            });
+        });
+
         botonAgregar.addEventListener("click", () => {
             const seleccionTalles = tallesDiv.querySelector('input:checked');
-            
-            if(seleccionTalles){
+            const seleccionCantidad = cantidadDiv.querySelector('input:checked');
+
+            if(seleccionTalles && seleccionCantidad){
                 const talleElegido = seleccionTalles.value;
-                const productoConTalle = {
+                const cantidadElegida = seleccionCantidad.value;
+
+                const productoConTalle  = {
                     ...producto,
-                    talle: talleElegido
+                    talle: talleElegido,
+                    cantidad: cantidadElegida,
                 };
                 
                 carrito.push(productoConTalle);
                 localStorage.setItem("carrito", JSON.stringify(carrito));
                 botonCarrito();
-                
-                
             };
         });
     });
 };
-
-function agregarCantidad (event){
-    const productoRepetido = event.currentTarget.id;
-    const productoSeleccionado = productos.find(producto => producto.id === productoRepetido);
-    
-    if(carrito.some(producto => producto.id === productoRepetido)){
-        const indice = carrito.findIndex(producto => producto.id === productoRepetido);
-    }else{
-        productoSeleccionado.quantity = 1;
-        carrito.push(productoSeleccionado);
-        agregarCantidad(productoSeleccionado);
-    }
-}
 
 mostrarProductos(productos);
 botonCarrito();

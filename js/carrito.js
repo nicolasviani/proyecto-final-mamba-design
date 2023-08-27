@@ -13,10 +13,10 @@ const botonComprar = document.querySelector(".carrito-acciones-comprar");
 function cargarProductosEnCarrito (){
     if(carrito && carrito.length > 0){
     
-        carritoVacio.classList.add("disable");
-        carritoProductos.classList.remove("disable");
-        carritoAcciones.classList.remove("disable");
-        carritoComprado.classList.add("disable");
+        carritoVacio.classList.add("disabled");
+        carritoProductos.classList.remove("disabled");
+        carritoAcciones.classList.remove("disabled");
+        carritoComprado.classList.add("disabled");
     
         carritoProductos.innerHTML = "";
     
@@ -27,19 +27,19 @@ function cargarProductosEnCarrito (){
             <img class="carrito-producto-imagen" src="${producto.image}" alt="${producto.name}">
             <div class="carrito-producto-titulo">
                 <small>${producto.name}</small>
-                <h3>Buzo Hugo Boss</h3>
+                <h3>${producto.category}</h3>
             </div>
             <div class="carrito-producto-cantidad">
-                <small>${producto.quantity}</small>
-                <p>1</p>
+                <small>Cantidad</small>
+                <p>${producto.cantidad}</p>
             </div>
             <div class="carrito-producto-precio">
-                <small>${producto.price}</small>
-                <p>$25999</p>
+                <small>Precio</small>
+                <p>${producto.price}</p>
             </div>
             <div class="carrito-producto-subtotal">
-                <small>${producto.price * producto.quantity}</small>
-                <p>$25999</p>
+                <small>Subtotal</small>
+                <p>${producto.price * producto.cantidad}</p>
             </div>
             <but class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></but
             `
@@ -47,17 +47,15 @@ function cargarProductosEnCarrito (){
         });
     
     }else{
-        carritoVacio.classList.remove("disable");
-        carritoProductos.classList.add("disable");
-        carritoAcciones.classList.add("disable");
-        carritoComprado.classList.add("disable");
+        carritoVacio.classList.remove("disabled");
+        carritoProductos.classList.add("disabled");
+        carritoAcciones.classList.add("disabled");
+        carritoComprado.classList.add("disabled");
     }
     actualizarBotonEliminar ();
     actualizarTotal();
 }
 cargarProductosEnCarrito();
-
-
 
 function actualizarBotonEliminar (){
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
@@ -87,7 +85,7 @@ botonVaciar.addEventListener("click",vaciarCarrito);
     
 
 function actualizarTotal(){
-    const totalCalculado = carrito.reduce((acumulador, producto) => acumulador + (producto.price * producto.quantity), 0);
+    const totalCalculado = carrito.reduce((acumulador, producto) => acumulador + (producto.price * producto.cantidad), 0);
     total.innerText = `$${totalCalculado}`;
 }
 
