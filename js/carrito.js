@@ -35,7 +35,7 @@ function cargarProductosEnCarrito (){
             </div>
             <div class="carrito-producto-precio">
                 <small>Precio</small>
-                <p>${producto.price}</p>
+                <p>$ ${producto.price}</p>
             </div>
             <div class="carrito-producto-subtotal">
                 <small>Subtotal</small>
@@ -69,10 +69,11 @@ function eliminarDelCarrito (event){
     const idBoton = event.currentTarget.id
     const productoEliminado = carrito.find(producto => producto.id === idBoton);
     
-    carrito.splice(index, 1);
-    cargarProductosEnCarrito();
-
+    carrito.splice(carrito.indexOf(productoEliminado, 1));
+    console.log(productoEliminado);
     localStorage.setItem("carrito", JSON.stringify(carrito));
+    
+    cargarProductosEnCarrito();
 }
 
 
@@ -98,6 +99,37 @@ botonComprar.addEventListener("click",comprarCarrito);
         carritoProductos.classList.add("disable");
         carritoAcciones.classList.add("disable");
         carritoComprado.classList.remove("disable");
+
+        fetch("https://api.mercadopago.com")
+        .then(response => response.json())
+        .then(data => {
+            
+            const modalContent = document.querySelector(".contenido-modal");
+            modalContent.innerHTML = `
+                <span class="cerrar">&times;</span>
+                <h2>Compra realizada</h2>
+                <p>Tu compra ha sido exitosa.</p>
+                <p>Información adicional: ${data.informacion}</p>
+            `;
+
+            const modal = document.querySelector("#modal");
+            const botonCerrar = document.querySelector(".cerrar")[0];
+
+            modal.style.display = "block";
+
+            botonCerrar.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
+        })
+        .catch(error => {
+            console.error("Error al obtener la información:", error);
+        });
     }
     
 

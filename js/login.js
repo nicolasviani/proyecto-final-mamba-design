@@ -61,7 +61,7 @@ const bienvenidaUndefined = () => {
                         `
 };
 
-botonIniciarSesion.addEventListener("submit",(event) =>{
+form.addEventListener("submit",(event) =>{
     event.preventDefault()
     const usuarios = usuariosRegistrados.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
     if(usuarios !== undefined){
