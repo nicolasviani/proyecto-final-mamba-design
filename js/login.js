@@ -1,4 +1,12 @@
-import baseDeDatos from '../js/bdd.js';
+// import baseDeDatos from '../js/bdd.js';
+let baseDeDatos = [];
+
+fetch("./js/baseDeDatos.json")
+.then(respuesta => {return respuesta.json()})
+.then(data => {
+    baseDeDatos = data;
+    bienvenida(usuarios.nombre);
+})
 
 const main = document.querySelector("#contenedorGeneral");
 const section = document.createElement("section");

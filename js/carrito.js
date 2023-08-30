@@ -8,7 +8,7 @@ const carritoComprado = document.querySelector("#carritoComprado");
 let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 const botonVaciar = document.querySelector(".carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
-const botonComprar = document.querySelector(".carrito-acciones-comprar");
+const botonComprar = document.querySelector("#carritoAccionesComprar");
 
 function cargarProductosEnCarrito (){
     if(carrito && carrito.length > 0){
@@ -70,7 +70,6 @@ function eliminarDelCarrito (event){
     const productoEliminado = carrito.find(producto => producto.id === idBoton);
     
     carrito.splice(carrito.indexOf(productoEliminado, 1));
-    console.log(productoEliminado);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     
     cargarProductosEnCarrito();
@@ -92,15 +91,16 @@ function actualizarTotal(){
 
 botonComprar.addEventListener("click",comprarCarrito);
     function comprarCarrito (){
+        
         carrito.length = 0;
         localStorage.setItem("carrito", JSON.stringify(carrito));
         
-        carritoVacio.classList.add("disable");
-        carritoProductos.classList.add("disable");
-        carritoAcciones.classList.add("disable");
-        carritoComprado.classList.remove("disable");
+        carritoVacio.classList.add("disabled");
+        carritoProductos.classList.add("disabled");
+        carritoAcciones.classList.add("disabled");
+        carritoComprado.classList.remove("disabled");
 
-        fetch("https://api.mercadopago.com")
+        fetch("./productos.json")
         .then(response => response.json())
         .then(data => {
             
