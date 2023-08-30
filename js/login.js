@@ -50,15 +50,35 @@ const botonIniciarSesion = document.querySelector("#enviar");
 
 
 const bienvenida = nombre =>{
-    form.innerHTML = `<h3 class="form-titulo"> Bienvenido ${nombre} a Mamba Desing... </h3> `
+    Swal.fire({
+        icon: 'success',
+        title: 'Genial...',
+        text: `Bienvenido ${nombre} a Mamba Desing...`,
+        footer: '<a href="./index.html">Ir a inicio</a>'
+      });
+      Toastify({
+        text: `Hola ${nombre}`,
+        duration: 4000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
 };
 
 const bienvenidaUndefined = () => {
-    form.innerHTML = `<h3 class="form-titulo"> No estas registrado... </h3>
-                        <div id="registrate" class="registrate">
-                            <button class="boton"><a href="./registrate.html">Registrate</a></button>
-                        </div>                              
-                        `
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'No estas registrado...',
+        footer: '<a href="./registrate.html">¿Quieres registrarte?</a>'
+        });
 };
 
 form.addEventListener("submit",(event) =>{

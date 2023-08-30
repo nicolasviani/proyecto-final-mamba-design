@@ -44,15 +44,34 @@ main.appendChild(section);
 const form = document.querySelector("#form");
 
 const felicitaciones = () =>{
-    form.innerHTML = `<h3 class="form-titulo"> Felicitaciones ya estas registrado en Mamba Design </h3>
-                        <div id="registrate" class="registrate">
-                            <button class="boton"><a href="./login.html">Ir a login</a></button>
-                        </div>
-                        `
+    Swal.fire({
+        title: '¿Quieres guardar los datos ingresados?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Guardar',
+        denyButtonText: `No guardar`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          Swal.fire('Registro exitoso!', '', 'success')
+        } else if (result.isDenied) {
+          Swal.fire('No guardar el usuario?', '', 'info')
+        }
+      })
+    // form.innerHTML = `<h3 class="form-titulo"> Felicitaciones ya estas registrado en Mamba Design </h3>
+    //                     <div id="registrate" class="registrate">
+    //                         <button class="boton"><a href="./login.html">Ir a login</a></button>
+    //                     </div>
+    //                     `
 };
 
 const errorDeRegistro = () =>{
-    form.innerHTML = `<h3 class="form-titulo"> los datos ingresados no coinciden </h3>`
+    Swal.fire(
+        'Los datos ingresados son incorrectos',
+        'Alguno de los campos ingresados no coincide',
+        'error'
+      )
+    // form.innerHTML = `<h3 class="form-titulo"> los datos ingresados no coinciden </h3>`
 }
 
 
