@@ -1,12 +1,8 @@
-// import baseDeDatos from '../js/bdd.js';
-let baseDeDatos = [];
-
-fetch("./js/baseDeDatos.json")
-.then(respuesta => {return respuesta.json()})
-.then(data => {
-    baseDeDatos = data;
-    bienvenida(usuarios.nombre);
-})
+const obtenerBaseDatos = async () =>{
+    const resp = await fetch ('../baseDeDatos.json');
+    const data = await resp.json();
+    return data
+}
 
 const main = document.querySelector("#contenedorGeneral");
 const section = document.createElement("section");
@@ -45,12 +41,9 @@ const user = {
     contraseña: "",
 };
 
-const usuariosRegistrados = JSON.parse(localStorage.getItem("usuariosRegistrados")) || baseDeDatos;
-console.log(usuariosRegistrados);
-
-if(!localStorage.getItem("usuariosRegistrados")){
-    localStorage.setItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
-}
+// if(!localStorage.getItem("usuariosRegistrados")){
+//     localStorage.setItem("usuariosRegistrados",JSON.stringify(usuariosRegistrados));
+// }
 
 const form = document.querySelector("#form");
 const inputs = document.querySelectorAll("input");
@@ -62,7 +55,7 @@ const bienvenida = nombre =>{
         icon: 'success',
         title: 'Genial...',
         text: `Bienvenido ${nombre} a Mamba Desing...`,
-        footer: '<a href="./index.html">Ir a inicio</a>'
+        footer: '<a href="../index.html">Ir a inicio</a>'
       });
       Toastify({
         text: `Hola ${nombre}`,
@@ -89,20 +82,27 @@ const bienvenidaUndefined = () => {
         });
 };
 
-form.addEventListener("submit",(event) =>{
-    event.preventDefault()
-    const usuarios = usuariosRegistrados.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
-    if(usuarios !== undefined){
-            bienvenida(usuarios.nombre);
-            localStorage.setItem("usuario",JSON.stringify(usuarios));
-    }else{
-        bienvenidaUndefined();
-    }
-});
+obtenerBaseDatos().then((response) => {
+    const usuariosRegistrados = JSON.parse(localStorage.getItem("usuariosRegistrados")) || response;
 
-inputs.forEach((elemento) =>{
-    elemento.addEventListener("input", (event) =>{
-        user[event.target.name] = event.target.value;
+    if(!localStorage.getItem("ususariosRegistrados")){
+        localStorage.setItem("usuariosRegistrados", JSON.stringify(usuariosRegistrados));
+    }
+
+    form.addEventListener("submit",(event) =>{
+        event.preventDefault()
+        const usuarios = usuariosRegistrados.find((personas) => user.nombre === personas.nombre && user.email === personas.email && user.contraseña === personas.contraseña);
+        if(usuarios !== undefined){
+                bienvenida(usuarios.nombre);
+                localStorage.setItem("usuario",JSON.stringify(usuarios));
+        }else{
+            bienvenidaUndefined();
+        }
+    });
+
+    inputs.forEach((elemento) =>{
+        elemento.addEventListener("input", (event) =>{
+            user[event.target.name] = event.target.value;
+        });
     });
 });
-

@@ -117,6 +117,9 @@
 .icon-container img {
   width: 24px; }
 
+#mainIndex {
+  background-color: #fff; }
+
 .parrafo-container {
   background-color: #0000ff;
   color: #fff;
@@ -955,7 +958,7 @@ aside {
   padding: 1rem;
   font-size: .85rem; }
 
-main {
+.main-carrito {
   background-color: #fff;
   margin: 1rem;
   margin-left: 0;

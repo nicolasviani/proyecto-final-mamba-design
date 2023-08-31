@@ -99,37 +99,6 @@ botonComprar.addEventListener("click",comprarCarrito);
         carritoProductos.classList.add("disabled");
         carritoAcciones.classList.add("disabled");
         carritoComprado.classList.remove("disabled");
-
-        fetch("./productos.json")
-        .then(response => response.json())
-        .then(data => {
-            
-            const modalContent = document.querySelector(".contenido-modal");
-            modalContent.innerHTML = `
-                <span class="cerrar">&times;</span>
-                <h2>Compra realizada</h2>
-                <p>Tu compra ha sido exitosa.</p>
-                <p>Información adicional: ${data.informacion}</p>
-            `;
-
-            const modal = document.querySelector("#modal");
-            const botonCerrar = document.querySelector(".cerrar")[0];
-
-            modal.style.display = "block";
-
-            botonCerrar.onclick = function () {
-                modal.style.display = "none";
-            }
-
-            window.onclick = function (event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            }
-        })
-        .catch(error => {
-            console.error("Error al obtener la información:", error);
-        });
     }
     
 
